@@ -6,7 +6,7 @@
 **Type**: Data Science / QuantFin Portfolio Project
 **Status**: In Development (MVP Phase)
 **Language**: Python 3.11
-**Primary Framework**: Streamlit
+**Primary Framework**: Dash (Plotly) with dash-bootstrap-components
 **Target**: Open-source portfolio showcase for QuantFin Master's student
 
 ### Project Goal
@@ -19,6 +19,24 @@ Build a comprehensive Bitcoin analytics dashboard combining 3 data sources:
 Multi-source convergence analysis - combining blockchain data, institutional flows, 
 and treasury holdings to provide holistic Bitcoin ecosystem view. Very few projects 
 do this integration.
+
+### Architecture Overview
+The project follows a modular architecture for scalability and maintainability:
+
+- **data_collectors/**: Centralized data collection modules (e.g., `price_data.py` for CoinGecko API)
+- **utils/**: Shared utilities (e.g., `logger.py` for logging)
+- **dashboard/**: Dash application
+  - `app.py`: Main Dash server with routing via callbacks
+  - `tabs/*_dash.py`: Individual tab modules (e.g., `tab_price_dash.py`) with `layout` variable and callbacks
+  - `assets/`: Static files (CSS, images) auto-loaded by Dash
+- **tests/**: Unit tests with pytest
+- **logs/**: Application logs
+
+To add a new tab:
+1. Create `dashboard/tabs/tab_new_dash.py` with a `layout` variable (Dash components) and `@callback` functions
+2. Import the tab's layout in `app.py`: `from dashboard.tabs.tab_new_dash import layout as tab_new_layout`
+3. Add to the callback in `app.py` that switches tab content: `elif active_tab == "tab-new": return tab_new_layout`
+4. Add a `dbc.Tab` entry to the `dbc.Tabs` component in `app.py` layout
 
 ---
 
@@ -135,7 +153,9 @@ matplotlib==3.8.2
 seaborn==0.13.0
 
 Dashboard Framework
-streamlit==1.29.0
+dash==2.14.2
+dash-bootstrap-components==1.5.0
+dash-bootstrap-themes==1.1.0
 
 Database (Optional)
 sqlalchemy==2.0.23
@@ -241,7 +261,7 @@ pytest tests/
 5. Work on features
 Edit files, test locally
 6. Run dashboard for testing
-streamlit run dashboard/app.py
+python dashboard/app.py
 
 7. Commit progress
 git add .
@@ -352,15 +372,15 @@ pip install -r requirements.txt
 
 text
 
-### Streamlit
+### Dash
 Run dashboard locally
-streamlit run dashboard/app.py
+python dashboard/app.py
 
 Run on specific port
-streamlit run dashboard/app.py --server.port 8502
+python dashboard/app.py --port 8502
 
-Clear cache
-streamlit cache clear
+Run in debug mode (auto-reload on file changes)
+python dashboard/app.py --debug
 
 text
 
@@ -415,11 +435,20 @@ session.mount("https://", adapter)
 
 text
 
-**3. Streamlit caching**
-Use @st.cache_data for data functions
-@st.cache_data(ttl=3600) # Cache 1 hour
-def load_data():
-return pd.read_csv('data.csv')
+**3. Dash callbacks**
+Use dcc.Store for data caching across callbacks
+layout = html.Div([
+    dcc.Store(id='data-store'),
+    # other components
+])
+
+@callback(
+    Output('data-store', 'data'),
+    Input('refresh-btn', 'n_clicks')
+)
+def load_data(n_clicks):
+    df = pd.read_csv('data.csv')
+    return df.to_dict('records')  # Serialize for JSON
 
 text
 
@@ -446,10 +475,11 @@ text
 - **Or**: `ratelimit` library decorator
 
 ### Dashboard Optimization
-- **Load data once** at startup (not on every interaction)
-- **Use Streamlit caching** (`@st.cache_data`)
-- **Lazy load tabs** (only compute when tab opened)
+- **Load data once** with `dcc.Store` + `dcc.Interval` for initial load
+- **Use callback context** to prevent unnecessary updates (`PreventUpdate`, `no_update`)
+- **Lazy load tabs** via conditional callbacks (only execute when tab active)
 - **Limit data points** in charts (resample if > 1000 points)
+- **Use `prevent_initial_call=True`** on callbacks that require user input
 
 ---
 
@@ -483,21 +513,34 @@ text
 ## DEPLOYMENT
 
 ### Local Development
-streamlit run dashboard/app.py
+python dashboard/app.py
 
-Access: http://localhost:8501
+Access: http://localhost:8050
 text
 
-### Streamlit Cloud (Free Hosting)
-1. Push code to GitHub
-2. Go to share.streamlit.io
-3. Connect GitHub repo
-4. Deploy (auto-updates on git push)
+### Production Deployment Options
 
-### Environment Variables on Streamlit Cloud
-- Go to App Settings → Secrets
-- Add: `GLASSNODE_API_KEY = "your_key"`
-- Access in code: `st.secrets["GLASSNODE_API_KEY"]`
+**Option 1: Render (Free Tier)**
+1. Push code to GitHub
+2. Create new Web Service on render.com
+3. Set build command: `pip install -r requirements.txt`
+4. Set start command: `python dashboard/app.py`
+5. Add environment variables in Render dashboard
+
+**Option 2: Railway**
+1. Connect GitHub repo to Railway
+2. Auto-detects Python + requirements.txt
+3. Set `PYTHONUNBUFFERED=1` in environment
+4. Runs `python dashboard/app.py` automatically
+
+**Option 3: Heroku**
+1. Create `Procfile`: `web: python dashboard/app.py`
+2. Push to Heroku: `git push heroku main`
+3. Set environment variables: `heroku config:set GLASSNODE_API_KEY=your_key`
+
+### Environment Variables in Production
+- Set in hosting platform's dashboard (not in .env)
+- Access in code: `os.getenv("GLASSNODE_API_KEY")`
 
 ---
 
@@ -509,12 +552,12 @@ Type: Python: Select Interpreter
 Choose: Python 3.11.x ('venv': venv)
 text
 
-### Streamlit Port Already in Use
-Kill process on port 8501
-lsof -ti:8501 | xargs kill -9
+### Dash Port Already in Use
+Kill process on port 8050
+lsof -ti:8050 | xargs kill -9
 
-Or use different port
-streamlit run dashboard/app.py --server.port 8502
+Or use different port in app.py
+app.run_server(debug=True, port=8502)
 
 text
 
@@ -530,14 +573,17 @@ text
 ## RESOURCES
 
 ### Documentation
-- Streamlit: https://docs.streamlit.io/
+- Dash: https://dash.plotly.com/
+- Dash Bootstrap Components: https://dash-bootstrap-components.opensource.faculty.ai/
 - Pandas: https://pandas.pydata.org/docs/
 - Plotly: https://plotly.com/python/
 - Glassnode API: https://docs.glassnode.com/api/
 
 ### Learning Resources
 - Pandas 10min: https://pandas.pydata.org/docs/user_guide/10min.html
-- Streamlit Gallery: https://streamlit.io/gallery
+- Dash Tutorial: https://dash.plotly.com/tutorial
+- Dash Gallery: https://dash-gallery.plotly.host/Portal/
+- Dash Callbacks: https://dash.plotly.com/basic-callbacks
 - Python Error Handling: https://realpython.com/python-exceptions/
 
 ---
@@ -563,9 +609,14 @@ text
 5. Include error handling (try/except) for API calls
 6. Use logging instead of print statements for production code
 7. Check if venv is activated before suggesting pip install
-8. Suggest caching for expensive operations
+8. Use `dcc.Store` for data caching in Dash (serialize with `.to_dict('records')`)
 9. Remind to add new dependencies to requirements.txt
 10. Follow project structure (don't create files outside defined folders)
+11. **Dash-specific**: Always use `@callback` decorator from `dash`, not `@app.callback`
+12. **Dash-specific**: Use `prevent_initial_call=True` for callbacks requiring user input
+13. **Dash-specific**: Place CSS files in `dashboard/assets/` for auto-loading
+14. **Dash-specific**: Use `dash-bootstrap-components` (dbc) for layout (not raw html.Div)
+15. **Dash-specific**: Serialize DataFrames with `.to_dict('records')` before storing in dcc.Store
 
 ### Current Development Priority:
 Focus on Phase 1 MVP - Getting basic data collection + simple dashboard working before 
@@ -580,5 +631,5 @@ add Glassnode data.
 
 ---
 
-**Last Updated**: November 19, 2025
-**Version**: 0.1.0 (MVP Phase)
+**Last Updated**: November 24, 2024
+**Version**: 0.2.0 (Dash Migration Phase)

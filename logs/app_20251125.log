@@ -1,0 +1,6 @@
+2025-11-25 23:53:45 - __main__ - INFO - === Bitcoin Price Downloader ===
+2025-11-25 23:53:45 - __main__ - INFO - 🔍 Recherche cache local...
+2025-11-25 23:53:45 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-25 23:53:45 - __main__ - INFO - ✅ Utilisation du cache (pas de téléchargement)
+2025-11-25 23:53:45 - __main__ - INFO - 
+=== Aperçu des données ===

@@ -1,0 +1,1382 @@
+2025-11-26 13:43:00 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 13:43:05 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 13:43:47 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 13:43:49 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 13:43:49 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 13:43:49 - data_collectors.price_data - INFO - 📡 Connexion à CoinGecko API pour 365 jours...
+2025-11-26 13:43:49 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-11-26 13:43:50 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=365&interval=daily HTTP/1.1" 200 None
+2025-11-26 13:43:50 - data_collectors.price_data - INFO - ✅ Données téléchargées : 366 jours
+2025-11-26 13:43:50 - data_collectors.price_data - INFO - 💾 Données sauvegardées : data/bitcoin_price.csv
+2025-11-26 13:43:50 - data_collectors.price_data - INFO - ✅ Données rafraîchies et sauvegardées
+2025-11-26 13:43:50 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 14:16:00 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 14:16:10 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 14:16:12 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 14:18:07 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 15:54:04 - __main__ - INFO - === Bitcoin Price Downloader ===
+2025-11-26 15:54:04 - __main__ - INFO - 🔍 Recherche cache local...
+2025-11-26 15:54:04 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 15:54:04 - __main__ - INFO - ✅ Utilisation du cache (pas de téléchargement)
+2025-11-26 15:54:04 - __main__ - INFO - 
+=== Aperçu des données ===
+2025-11-26 15:54:09 - data_collectors.price_data - INFO - 📡 Connexion à CoinGecko API pour 2 jours...
+2025-11-26 15:54:09 - data_collectors.price_data - INFO - ✅ Données téléchargées : 2 jours
+2025-11-26 15:54:09 - data_collectors.price_data - INFO - 📡 Connexion à CoinGecko API pour 1 jours...
+2025-11-26 15:54:09 - data_collectors.price_data - ERROR - ❌ Erreur API : Status 500
+2025-11-26 15:54:09 - data_collectors.price_data - INFO - 💾 Données sauvegardées : /var/folders/hd/15fn1_cx4598t9td4hjhj7v00000gp/T/tmpn076ac50/test.csv
+2025-11-26 15:54:09 - data_collectors.price_data - ERROR - ❌ Erreur lecture CSV : 'date' is not in list
+2025-11-26 15:54:09 - data_collectors.price_data - WARNING - ⚠️ Fichier nonexistent.csv n'existe pas
+2025-11-26 15:54:09 - data_collectors.price_data - INFO - ✅ Données rafraîchies et sauvegardées
+2025-11-26 15:54:09 - data_collectors.price_data - ERROR - ❌ Échec du téléchargement
+2025-11-26 15:56:36 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:02:19 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:25:03 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-11-26 16:25:23 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-11-26 16:26:05 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-11-26 16:27:17 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-11-26 16:28:00 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:28:00 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:28:01 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:28:01 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:28:09 - data_collectors.price_data - INFO - 📡 Connexion à CoinGecko API pour 365 jours...
+2025-11-26 16:28:09 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:28:10 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-11-26 16:28:10 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=365&interval=daily HTTP/1.1" 200 None
+2025-11-26 16:28:10 - data_collectors.price_data - INFO - ✅ Données téléchargées : 366 jours
+2025-11-26 16:28:10 - data_collectors.price_data - INFO - 💾 Données sauvegardées : data/bitcoin_price.csv
+2025-11-26 16:28:10 - data_collectors.price_data - INFO - ✅ Données rafraîchies et sauvegardées
+2025-11-26 16:28:11 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:28:21 - data_collectors.price_data - INFO - 📡 Connexion à CoinGecko API pour 365 jours...
+2025-11-26 16:28:21 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-11-26 16:28:21 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=365&interval=daily HTTP/1.1" 200 None
+2025-11-26 16:28:21 - data_collectors.price_data - INFO - ✅ Données téléchargées : 366 jours
+2025-11-26 16:28:21 - data_collectors.price_data - INFO - 💾 Données sauvegardées : data/bitcoin_price.csv
+2025-11-26 16:28:21 - data_collectors.price_data - INFO - ✅ Données rafraîchies et sauvegardées
+2025-11-26 16:28:22 - data_collectors.price_data - INFO - 📡 Connexion à CoinGecko API pour 365 jours...
+2025-11-26 16:28:22 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-11-26 16:28:22 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=365&interval=daily HTTP/1.1" 200 None
+2025-11-26 16:28:22 - data_collectors.price_data - INFO - ✅ Données téléchargées : 366 jours
+2025-11-26 16:28:22 - data_collectors.price_data - INFO - 💾 Données sauvegardées : data/bitcoin_price.csv
+2025-11-26 16:28:22 - data_collectors.price_data - INFO - ✅ Données rafraîchies et sauvegardées
+2025-11-26 16:28:43 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:30:54 - data_collectors.price_data - INFO - 📡 Connexion à CoinGecko API pour 365 jours...
+2025-11-26 16:30:54 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-11-26 16:30:54 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:30:54 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=365&interval=daily HTTP/1.1" 200 None
+2025-11-26 16:30:54 - data_collectors.price_data - INFO - ✅ Données téléchargées : 366 jours
+2025-11-26 16:30:54 - data_collectors.price_data - INFO - 💾 Données sauvegardées : data/bitcoin_price.csv
+2025-11-26 16:30:54 - data_collectors.price_data - INFO - ✅ Données rafraîchies et sauvegardées
+2025-11-26 16:30:55 - data_collectors.price_data - INFO - 📡 Connexion à CoinGecko API pour 365 jours...
+2025-11-26 16:30:55 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:30:55 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-11-26 16:30:55 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=365&interval=daily HTTP/1.1" 200 None
+2025-11-26 16:30:55 - data_collectors.price_data - INFO - ✅ Données téléchargées : 366 jours
+2025-11-26 16:30:55 - data_collectors.price_data - INFO - 💾 Données sauvegardées : data/bitcoin_price.csv
+2025-11-26 16:30:55 - data_collectors.price_data - INFO - ✅ Données rafraîchies et sauvegardées
+2025-11-26 16:30:58 - data_collectors.price_data - INFO - 📡 Connexion à CoinGecko API pour 365 jours...
+2025-11-26 16:30:58 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:30:58 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-11-26 16:30:58 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=365&interval=daily HTTP/1.1" 200 None
+2025-11-26 16:30:58 - data_collectors.price_data - INFO - ✅ Données téléchargées : 366 jours
+2025-11-26 16:30:58 - data_collectors.price_data - INFO - 💾 Données sauvegardées : data/bitcoin_price.csv
+2025-11-26 16:30:58 - data_collectors.price_data - INFO - ✅ Données rafraîchies et sauvegardées
+2025-11-26 16:30:59 - data_collectors.price_data - INFO - 📡 Connexion à CoinGecko API pour 365 jours...
+2025-11-26 16:30:59 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:30:59 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-11-26 16:30:59 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=365&interval=daily HTTP/1.1" 200 None
+2025-11-26 16:30:59 - data_collectors.price_data - INFO - ✅ Données téléchargées : 366 jours
+2025-11-26 16:30:59 - data_collectors.price_data - INFO - 💾 Données sauvegardées : data/bitcoin_price.csv
+2025-11-26 16:30:59 - data_collectors.price_data - INFO - ✅ Données rafraîchies et sauvegardées
+2025-11-26 16:31:01 - data_collectors.price_data - INFO - 📡 Connexion à CoinGecko API pour 365 jours...
+2025-11-26 16:31:01 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:31:01 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-11-26 16:31:01 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=365&interval=daily HTTP/1.1" 200 None
+2025-11-26 16:31:01 - data_collectors.price_data - INFO - ✅ Données téléchargées : 366 jours
+2025-11-26 16:31:01 - data_collectors.price_data - INFO - 💾 Données sauvegardées : data/bitcoin_price.csv
+2025-11-26 16:31:01 - data_collectors.price_data - INFO - ✅ Données rafraîchies et sauvegardées
+2025-11-26 16:31:01 - data_collectors.price_data - INFO - 📡 Connexion à CoinGecko API pour 365 jours...
+2025-11-26 16:31:01 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:31:01 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-11-26 16:31:01 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=365&interval=daily HTTP/1.1" 200 None
+2025-11-26 16:31:01 - data_collectors.price_data - INFO - ✅ Données téléchargées : 366 jours
+2025-11-26 16:31:01 - data_collectors.price_data - INFO - 💾 Données sauvegardées : data/bitcoin_price.csv
+2025-11-26 16:31:01 - data_collectors.price_data - INFO - ✅ Données rafraîchies et sauvegardées
+2025-11-26 16:31:02 - data_collectors.price_data - INFO - 📡 Connexion à CoinGecko API pour 365 jours...
+2025-11-26 16:31:02 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:31:02 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-11-26 16:31:02 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=365&interval=daily HTTP/1.1" 429 187
+2025-11-26 16:31:02 - data_collectors.price_data - ERROR - ❌ Erreur API : Status 429
+2025-11-26 16:31:02 - data_collectors.price_data - ERROR - ❌ Échec du téléchargement
+2025-11-26 16:31:05 - data_collectors.price_data - INFO - 📡 Connexion à CoinGecko API pour 365 jours...
+2025-11-26 16:31:05 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:31:05 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-11-26 16:31:05 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=365&interval=daily HTTP/1.1" 429 187
+2025-11-26 16:31:05 - data_collectors.price_data - ERROR - ❌ Erreur API : Status 429
+2025-11-26 16:31:05 - data_collectors.price_data - ERROR - ❌ Échec du téléchargement
+2025-11-26 16:31:07 - data_collectors.price_data - INFO - 📡 Connexion à CoinGecko API pour 365 jours...
+2025-11-26 16:31:08 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:31:08 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-11-26 16:31:08 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=365&interval=daily HTTP/1.1" 429 187
+2025-11-26 16:31:08 - data_collectors.price_data - ERROR - ❌ Erreur API : Status 429
+2025-11-26 16:31:08 - data_collectors.price_data - ERROR - ❌ Échec du téléchargement
+2025-11-26 16:31:09 - data_collectors.price_data - INFO - 📡 Connexion à CoinGecko API pour 365 jours...
+2025-11-26 16:31:09 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:31:09 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-11-26 16:31:10 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=365&interval=daily HTTP/1.1" 429 187
+2025-11-26 16:31:10 - data_collectors.price_data - ERROR - ❌ Erreur API : Status 429
+2025-11-26 16:31:10 - data_collectors.price_data - ERROR - ❌ Échec du téléchargement
+2025-11-26 16:31:10 - data_collectors.price_data - INFO - 📡 Connexion à CoinGecko API pour 365 jours...
+2025-11-26 16:31:10 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:31:10 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-11-26 16:31:11 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=365&interval=daily HTTP/1.1" 429 187
+2025-11-26 16:31:11 - data_collectors.price_data - ERROR - ❌ Erreur API : Status 429
+2025-11-26 16:31:11 - data_collectors.price_data - ERROR - ❌ Échec du téléchargement
+2025-11-26 16:31:14 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:31:14 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:31:15 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:31:15 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:31:17 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:31:17 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:31:18 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:31:18 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:38:45 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:38:45 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:38:46 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:38:46 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:39:10 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-11-26 16:39:19 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:39:19 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:39:20 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:39:20 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:40:10 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:40:10 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:40:11 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:40:11 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:40:12 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:40:12 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:40:13 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:40:13 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:42:46 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:42:46 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:42:47 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:42:47 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:43:14 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-11-26 16:43:17 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:43:17 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:43:18 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:43:18 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:43:18 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:43:18 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:43:19 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:43:19 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:45:10 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:45:10 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:45:11 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:45:11 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:45:13 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:45:13 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:45:14 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:45:14 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:45:19 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-11-26 16:45:22 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:45:22 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:45:23 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:45:23 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:48:41 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:48:41 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:48:42 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:48:42 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:49:07 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-11-26 16:49:08 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:49:08 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:49:09 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:49:09 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:49:10 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:49:10 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:49:11 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 16:49:11 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:08:15 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-11-26 17:08:22 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:08:22 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:08:23 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:08:23 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:08:25 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:08:25 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:08:26 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:08:26 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:09:00 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:09:00 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:09:03 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:09:03 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:09:06 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:09:06 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:11:13 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-11-26 17:11:16 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:11:16 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:11:17 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:11:17 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:11:19 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:11:19 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:11:20 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:11:20 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:11:24 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:11:24 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:11:25 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:11:25 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:11:30 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:11:30 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:13:23 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:13:23 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:13:24 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:13:24 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:13:40 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:13:40 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:13:41 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:13:41 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:15:30 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:15:30 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:15:31 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:15:31 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:20:27 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:20:27 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:20:28 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:20:28 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:21:22 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:21:22 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:21:23 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:21:23 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:22:14 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:22:14 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:22:15 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:22:15 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:24:54 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:24:54 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:24:55 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:24:55 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:26:10 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:26:10 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:26:11 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:26:11 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:28:03 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:28:03 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:28:04 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:28:04 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:33:52 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:33:52 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:33:53 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:33:53 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:35:53 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:35:53 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:35:54 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:35:54 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:35:56 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:35:56 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:35:57 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:35:57 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:36:02 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:36:02 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:36:04 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:36:04 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:36:05 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:36:05 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:36:06 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:36:06 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:37:30 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-11-26 17:38:12 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-11-26 17:38:15 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:38:15 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:38:16 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:38:16 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:44:21 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:44:21 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:44:22 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:44:22 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:44:30 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:44:40 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:44:40 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:44:41 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:44:41 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:45:01 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-11-26 17:45:02 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:45:02 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:45:03 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:45:03 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:45:04 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:45:04 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:45:05 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:45:05 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:46:23 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:46:26 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:46:26 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:46:27 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:46:27 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:46:28 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:47:27 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:47:28 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:47:28 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:47:28 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:50:43 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:50:43 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:50:44 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:50:44 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:51:49 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:51:49 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:51:50 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:51:50 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:51:58 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:51:58 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:51:59 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:51:59 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:54:43 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:54:43 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:54:44 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:54:44 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:55:06 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:55:06 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:55:09 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:55:09 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:57:23 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:57:23 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:57:24 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:57:24 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:58:11 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:58:11 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:58:12 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:58:12 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:58:14 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:58:14 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:58:15 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 17:58:15 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:07:24 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:07:24 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:07:25 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:07:25 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:07:26 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:07:26 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:07:26 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:07:26 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:07:27 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:07:27 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:07:34 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:08:33 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:08:33 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:08:34 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:08:34 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:08:42 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:08:42 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:08:43 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:08:43 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:08:51 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:08:51 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:08:52 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:08:52 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:08:56 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:08:56 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:08:57 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:08:57 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:08:58 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:09:05 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:09:05 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:09:06 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:09:06 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:09:08 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:09:08 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:09:10 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:09:10 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:09:27 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:09:28 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:10:53 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:10:53 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:10:54 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:10:54 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:10:58 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:10:58 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:10:59 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:10:59 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:06 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:06 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:07 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:07 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:13 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:13 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:14 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:14 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:15 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:15 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:17 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:17 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:19 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:19 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:21 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:21 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:22 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:22 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:33 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:33 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:34 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:34 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:35 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:35 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:36 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:36 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:37 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:37 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:37 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:37 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:38 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:38 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:43 - data_collectors.price_data - INFO - 📡 Connexion à CoinGecko API pour max jours...
+2025-11-26 18:11:43 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:43 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-11-26 18:11:44 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=max&interval=daily HTTP/1.1" 401 None
+2025-11-26 18:11:44 - data_collectors.price_data - ERROR - ❌ Erreur API : Status 401
+2025-11-26 18:11:44 - data_collectors.price_data - ERROR - ❌ Échec du téléchargement
+2025-11-26 18:11:48 - data_collectors.price_data - INFO - 📡 Connexion à CoinGecko API pour max jours...
+2025-11-26 18:11:48 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:48 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-11-26 18:11:49 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=max&interval=daily HTTP/1.1" 401 None
+2025-11-26 18:11:49 - data_collectors.price_data - ERROR - ❌ Erreur API : Status 401
+2025-11-26 18:11:49 - data_collectors.price_data - ERROR - ❌ Échec du téléchargement
+2025-11-26 18:11:51 - data_collectors.price_data - INFO - 📡 Connexion à CoinGecko API pour max jours...
+2025-11-26 18:11:51 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:51 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-11-26 18:11:52 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=max&interval=daily HTTP/1.1" 401 None
+2025-11-26 18:11:52 - data_collectors.price_data - ERROR - ❌ Erreur API : Status 401
+2025-11-26 18:11:52 - data_collectors.price_data - ERROR - ❌ Échec du téléchargement
+2025-11-26 18:11:53 - data_collectors.price_data - INFO - 📡 Connexion à CoinGecko API pour max jours...
+2025-11-26 18:11:53 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:11:53 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-11-26 18:11:53 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=max&interval=daily HTTP/1.1" 401 None
+2025-11-26 18:11:53 - data_collectors.price_data - ERROR - ❌ Erreur API : Status 401
+2025-11-26 18:11:53 - data_collectors.price_data - ERROR - ❌ Échec du téléchargement
+2025-11-26 18:12:57 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:12:57 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:12:58 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:12:58 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:23:24 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:23:24 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:23:25 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:23:25 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:23:45 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:23:45 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:23:46 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:23:46 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:24:04 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:24:04 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:24:05 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:24:05 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:26:29 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:26:29 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:26:31 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:26:31 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:26:32 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:26:32 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:26:35 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:26:35 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:26:35 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:26:35 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:26:37 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:26:37 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:26:39 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:26:39 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:27:53 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:27:53 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:27:54 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:27:54 - data_collectors.price_data - INFO - 📂 Données chargées depuis cache : 366 jours
+2025-11-26 18:28:26 - data_collectors.price_data_v2 - WARNING - 📂 Local history file not found: /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 18:28:26 - data_collectors.price_data_v2 - WARNING - 📂 Local history file not found: /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 18:28:26 - data_collectors.price_data_v2 - INFO - 📡 Fetching 7 days from CoinGecko API...
+2025-11-26 18:28:26 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-11-26 18:28:26 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=7&interval=daily HTTP/1.1" 200 None
+2025-11-26 18:28:26 - data_collectors.price_data_v2 - INFO - ✅ Fetched 8 records from CoinGecko (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:28:26 - data_collectors.price_data_v2 - WARNING - ⚠️ No local history, using only CoinGecko data
+2025-11-26 18:28:26 - data_collectors.price_data_v2 - INFO - 💾 Saved 8 records to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 18:28:26 - data_collectors.price_data_v2 - INFO - ✅ Complete series: 8 records (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:28:27 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:28:29 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:28:30 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:28:52 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:28:53 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:07 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:08 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:20 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:20 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:21 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:21 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:23 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:23 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:24 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:24 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:29 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:29 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:30 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:30 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:40 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:40 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:42 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:42 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:45 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from 2010-07-01 via Yahoo Finance...
+2025-11-26 18:29:45 - yfinance - DEBUG - Entering history()
+2025-11-26 18:29:45 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:45 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_kv" ("key" VARCHAR(255) NOT NULL PRIMARY KEY, "value" VARCHAR(255)) WITHOUT ROWID', [])
+2025-11-26 18:29:45 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['BTC-USD', 1, 0])
+2025-11-26 18:29:45 - yfinance - DEBUG -  Entering _fetch_ticker_tz()
+2025-11-26 18:29:45 - yfinance - DEBUG -   Entering get()
+2025-11-26 18:29:45 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/BTC-USD
+2025-11-26 18:29:45 - yfinance - DEBUG - params=frozendict.frozendict({'range': '1d', 'interval': '1d'})
+2025-11-26 18:29:45 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-11-26 18:29:45 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-11-26 18:29:45 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-11-26 18:29:45 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-11-26 18:29:45 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2025-11-26 18:29:45 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): fc.yahoo.com:443
+2025-11-26 18:29:45 - urllib3.connectionpool - DEBUG - https://fc.yahoo.com:443 "GET / HTTP/1.1" 404 4744
+2025-11-26 18:29:45 - peewee - DEBUG - ('DELETE FROM "_cookieschema" WHERE ("_cookieschema"."strategy" = ?)', ['basic'])
+2025-11-26 18:29:45 - peewee - DEBUG - ('BEGIN', None)
+2025-11-26 18:29:45 - peewee - DEBUG - ('INSERT INTO "_cookieschema" ("strategy", "fetch_date", "cookie_bytes") VALUES (?, ?, ?)', ['basic', datetime.datetime(2025, 11, 26, 18, 29, 45, 987256), <memory at 0x143495cc0>])
+2025-11-26 18:29:45 - yfinance - DEBUG - fetched basic cookie = <Cookie A3=d=AQABBBlHJ2kCED1Lhgu3ateWBW7bRdsZwDEFEgEBAQGYKGkxafBNziMA_eMCAA&S=AQAAAuAAsMxweJmPTES18t_bCKw for .yahoo.com/>
+2025-11-26 18:29:45 - yfinance - DEBUG - reusing cookie
+2025-11-26 18:29:46 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2025-11-26 18:29:46 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 429 23
+2025-11-26 18:29:46 - yfinance - DEBUG - crumb = 'Edge: Too Many Requests'
+2025-11-26 18:29:46 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-11-26 18:29:46 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-11-26 18:29:46 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2025-11-26 18:29:46 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?range=1d&interval=1d&crumb=Edge%3A+Too+Many+Requests HTTP/1.1" 429 23
+2025-11-26 18:29:46 - yfinance - DEBUG - response code=429
+2025-11-26 18:29:46 - yfinance - DEBUG - toggling cookie strategy basic -> csrf
+2025-11-26 18:29:46 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-11-26 18:29:46 - yfinance - DEBUG - cookie_mode = 'csrf'
+2025-11-26 18:29:46 - yfinance - DEBUG -     Entering _get_crumb_csrf()
+2025-11-26 18:29:46 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['csrf', 1, 0])
+2025-11-26 18:29:46 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): guce.yahoo.com:443
+2025-11-26 18:29:46 - urllib3.connectionpool - DEBUG - https://guce.yahoo.com:443 "GET /consent HTTP/1.1" 302 0
+2025-11-26 18:29:47 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): consent.yahoo.com:443
+2025-11-26 18:29:47 - urllib3.connectionpool - DEBUG - https://consent.yahoo.com:443 "GET /v2/collectConsent?sessionId=3_cc-session_90238b0f-1378-47cd-9907-963fe438eb50 HTTP/1.1" 200 14337
+2025-11-26 18:29:47 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2025-11-26 18:29:47 - yfinance - DEBUG - csrfToken = euXJqtu0T8H8uOszS-lBeGZ8Ztn3C7ry
+2025-11-26 18:29:47 - yfinance - DEBUG - sessionId='3_cc-session_90238b0f-1378-47cd-9907-963fe438eb50
+2025-11-26 18:29:47 - urllib3.connectionpool - DEBUG - https://consent.yahoo.com:443 "POST /v2/collectConsent?sessionId=3_cc-session_90238b0f-1378-47cd-9907-963fe438eb50 HTTP/1.1" 302 0
+2025-11-26 18:29:47 - urllib3.connectionpool - DEBUG - https://guce.yahoo.com:443 "GET /copyConsent?sessionId=3_cc-session_90238b0f-1378-47cd-9907-963fe438eb50&lang=en-GB HTTP/1.1" 302 0
+2025-11-26 18:29:47 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.yahoo.com:443
+2025-11-26 18:29:47 - urllib3.connectionpool - DEBUG - https://www.yahoo.com:443 "GET /?guccounter=1 HTTP/1.1" 429 23
+2025-11-26 18:29:48 - urllib3.connectionpool - DEBUG - https://guce.yahoo.com:443 "GET /copyConsent?sessionId=3_cc-session_90238b0f-1378-47cd-9907-963fe438eb50 HTTP/1.1" 302 0
+2025-11-26 18:29:48 - urllib3.connectionpool - DEBUG - Resetting dropped connection: www.yahoo.com
+2025-11-26 18:29:48 - urllib3.connectionpool - DEBUG - https://www.yahoo.com:443 "GET /?guccounter=1 HTTP/1.1" 429 23
+2025-11-26 18:29:48 - peewee - DEBUG - ('DELETE FROM "_cookieschema" WHERE ("_cookieschema"."strategy" = ?)', ['csrf'])
+2025-11-26 18:29:48 - peewee - DEBUG - ('BEGIN', None)
+2025-11-26 18:29:48 - peewee - DEBUG - ('INSERT INTO "_cookieschema" ("strategy", "fetch_date", "cookie_bytes") VALUES (?, ?, ?)', ['csrf', datetime.datetime(2025, 11, 26, 18, 29, 48, 281468), <memory at 0x143496b00>])
+2025-11-26 18:29:48 - urllib3.connectionpool - DEBUG - Resetting dropped connection: query2.finance.yahoo.com
+2025-11-26 18:29:48 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 429 23
+2025-11-26 18:29:48 - yfinance - DEBUG - crumb = 'Edge: Too Many Requests'
+2025-11-26 18:29:48 - yfinance - DEBUG -     Exiting _get_crumb_csrf()
+2025-11-26 18:29:48 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-11-26 18:29:48 - urllib3.connectionpool - DEBUG - Resetting dropped connection: query2.finance.yahoo.com
+2025-11-26 18:29:48 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?range=1d&interval=1d&crumb=Edge%3A+Too+Many+Requests HTTP/1.1" 429 23
+2025-11-26 18:29:48 - yfinance - DEBUG - response code=429
+2025-11-26 18:29:48 - yfinance - DEBUG -   Exiting get()
+2025-11-26 18:29:48 - yfinance - ERROR - Failed to get ticker 'BTC-USD' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-26 18:29:48 - yfinance - DEBUG -  Exiting _fetch_ticker_tz()
+2025-11-26 18:29:48 - yfinance - ERROR - BTC-USD: No timezone found, symbol may be delisted
+2025-11-26 18:29:48 - yfinance - DEBUG - Exiting history()
+2025-11-26 18:29:48 - data_collectors.price_data_v2 - ERROR - ❌ Yahoo Finance returned no data
+2025-11-26 18:29:55 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:55 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:56 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:56 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:58 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from 2010-07-01 via Yahoo Finance...
+2025-11-26 18:29:58 - yfinance - DEBUG - Entering history()
+2025-11-26 18:29:58 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:29:58 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_kv" ("key" VARCHAR(255) NOT NULL PRIMARY KEY, "value" VARCHAR(255)) WITHOUT ROWID', [])
+2025-11-26 18:29:58 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['BTC-USD', 1, 0])
+2025-11-26 18:29:58 - yfinance - DEBUG -  Entering _fetch_ticker_tz()
+2025-11-26 18:29:58 - yfinance - DEBUG -   Entering get()
+2025-11-26 18:29:58 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/BTC-USD
+2025-11-26 18:29:58 - yfinance - DEBUG - params=frozendict.frozendict({'range': '1d', 'interval': '1d'})
+2025-11-26 18:29:58 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-11-26 18:29:58 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-11-26 18:29:58 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-11-26 18:29:58 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-11-26 18:29:58 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2025-11-26 18:29:58 - yfinance - DEBUG - loaded persistent cookie
+2025-11-26 18:29:58 - yfinance - DEBUG - reusing cookie
+2025-11-26 18:29:58 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2025-11-26 18:29:58 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 429 23
+2025-11-26 18:29:58 - yfinance - DEBUG - crumb = 'Edge: Too Many Requests'
+2025-11-26 18:29:58 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-11-26 18:29:58 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-11-26 18:29:58 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2025-11-26 18:29:58 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?range=1d&interval=1d&crumb=Edge%3A+Too+Many+Requests HTTP/1.1" 429 23
+2025-11-26 18:29:58 - yfinance - DEBUG - response code=429
+2025-11-26 18:29:58 - yfinance - DEBUG - toggling cookie strategy basic -> csrf
+2025-11-26 18:29:58 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-11-26 18:29:58 - yfinance - DEBUG - cookie_mode = 'csrf'
+2025-11-26 18:29:58 - yfinance - DEBUG -     Entering _get_crumb_csrf()
+2025-11-26 18:29:58 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['csrf', 1, 0])
+2025-11-26 18:29:58 - yfinance - DEBUG - loaded persistent cookie
+2025-11-26 18:29:58 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): guce.yahoo.com:443
+2025-11-26 18:29:59 - urllib3.connectionpool - DEBUG - https://guce.yahoo.com:443 "GET /consent HTTP/1.1" 302 0
+2025-11-26 18:29:59 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.yahoo.com:443
+2025-11-26 18:29:59 - urllib3.connectionpool - DEBUG - https://www.yahoo.com:443 "GET /?guccounter=1 HTTP/1.1" 429 23
+2025-11-26 18:29:59 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2025-11-26 18:29:59 - yfinance - DEBUG - Failed to find "csrfToken" in response
+2025-11-26 18:29:59 - yfinance - DEBUG -     Exiting _get_crumb_csrf()
+2025-11-26 18:29:59 - yfinance - DEBUG - toggling cookie strategy csrf -> basic
+2025-11-26 18:29:59 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-11-26 18:29:59 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2025-11-26 18:29:59 - yfinance - DEBUG - loaded persistent cookie
+2025-11-26 18:29:59 - yfinance - DEBUG - reusing cookie
+2025-11-26 18:29:59 - urllib3.connectionpool - DEBUG - Resetting dropped connection: query1.finance.yahoo.com
+2025-11-26 18:29:59 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 429 23
+2025-11-26 18:29:59 - yfinance - DEBUG - crumb = 'Edge: Too Many Requests'
+2025-11-26 18:29:59 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-11-26 18:29:59 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-11-26 18:29:59 - urllib3.connectionpool - DEBUG - Resetting dropped connection: query2.finance.yahoo.com
+2025-11-26 18:29:59 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?range=1d&interval=1d&crumb=Edge%3A+Too+Many+Requests HTTP/1.1" 429 23
+2025-11-26 18:29:59 - yfinance - DEBUG - response code=429
+2025-11-26 18:29:59 - yfinance - DEBUG -   Exiting get()
+2025-11-26 18:29:59 - yfinance - ERROR - Failed to get ticker 'BTC-USD' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-26 18:29:59 - yfinance - DEBUG -  Exiting _fetch_ticker_tz()
+2025-11-26 18:29:59 - yfinance - ERROR - BTC-USD: No timezone found, symbol may be delisted
+2025-11-26 18:29:59 - yfinance - DEBUG - Exiting history()
+2025-11-26 18:29:59 - data_collectors.price_data_v2 - ERROR - ❌ Yahoo Finance returned no data
+2025-11-26 18:35:03 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:35:03 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:35:03 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:35:03 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:35:05 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from 2010-07-01 via Yahoo Finance...
+2025-11-26 18:35:05 - yfinance - DEBUG - Entering history()
+2025-11-26 18:35:05 - data_collectors.price_data_v2 - INFO - ✅ Loaded 7 records from local history (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:35:05 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_tz_kv" ("key" VARCHAR(255) NOT NULL PRIMARY KEY, "value" VARCHAR(255)) WITHOUT ROWID', [])
+2025-11-26 18:35:05 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['BTC-USD', 1, 0])
+2025-11-26 18:35:05 - yfinance - DEBUG -  Entering _fetch_ticker_tz()
+2025-11-26 18:35:05 - yfinance - DEBUG -   Entering get()
+2025-11-26 18:35:05 - yfinance - DEBUG -    Entering _make_request()
+2025-11-26 18:35:05 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/BTC-USD
+2025-11-26 18:35:05 - yfinance - DEBUG - params=frozendict.frozendict({'range': '1d', 'interval': '1d'})
+2025-11-26 18:35:05 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-11-26 18:35:05 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-11-26 18:35:05 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-11-26 18:35:05 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-11-26 18:35:05 - yfinance - DEBUG -        Entering _load_cookie_curlCffi()
+2025-11-26 18:35:05 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-11-26 18:35:05 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-11-26 18:35:05 - yfinance - DEBUG -        Exiting _load_cookie_curlCffi()
+2025-11-26 18:35:06 - yfinance - DEBUG -        Entering _save_cookie_curlCffi()
+2025-11-26 18:35:06 - peewee - DEBUG - ('DELETE FROM "_cookieschema" WHERE ("_cookieschema"."strategy" = ?)', ['curlCffi'])
+2025-11-26 18:35:06 - peewee - DEBUG - ('BEGIN', None)
+2025-11-26 18:35:06 - peewee - DEBUG - ('INSERT INTO "_cookieschema" ("strategy", "fetch_date", "cookie_bytes") VALUES (?, ?, ?)', ['curlCffi', '2025-11-26T18:35:06.227190', <memory at 0x16085c640>])
+2025-11-26 18:35:06 - yfinance - DEBUG -        Exiting _save_cookie_curlCffi()
+2025-11-26 18:35:06 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-11-26 18:35:06 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-11-26 18:35:06 - yfinance - DEBUG -        Entering _get_cookie_basic()
+2025-11-26 18:35:06 - yfinance - DEBUG -         Entering _load_cookie_curlCffi()
+2025-11-26 18:35:06 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-11-26 18:35:06 - yfinance - DEBUG -         Exiting _load_cookie_curlCffi()
+2025-11-26 18:35:06 - yfinance - DEBUG - reusing persistent cookie
+2025-11-26 18:35:06 - yfinance - DEBUG -        Exiting _get_cookie_basic()
+2025-11-26 18:35:06 - yfinance - DEBUG - crumb = 'vn6cBQ88Q4f'
+2025-11-26 18:35:06 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-11-26 18:35:06 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-11-26 18:35:06 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-11-26 18:35:06 - yfinance - DEBUG - response code=200
+2025-11-26 18:35:06 - yfinance - DEBUG -    Exiting _make_request()
+2025-11-26 18:35:06 - yfinance - DEBUG -   Exiting get()
+2025-11-26 18:35:06 - yfinance - DEBUG -  Exiting _fetch_ticker_tz()
+2025-11-26 18:35:06 - peewee - DEBUG - ('BEGIN', None)
+2025-11-26 18:35:06 - peewee - DEBUG - ('INSERT INTO "_tz_kv" ("key", "value") VALUES (?, ?)', ['BTC-USD', 'UTC'])
+2025-11-26 18:35:06 - yfinance - DEBUG -  Entering history()
+2025-11-26 18:35:06 - yfinance - DEBUG - BTC-USD: Yahoo GET parameters: {'period1': '2010-07-01 00:00:00+00:00', 'period2': '2025-11-26 00:00:00+00:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-11-26 18:35:06 - yfinance - DEBUG -   Entering get()
+2025-11-26 18:35:06 - yfinance - DEBUG -    Entering _make_request()
+2025-11-26 18:35:06 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/BTC-USD
+2025-11-26 18:35:06 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1277942400, 'period2': 1764115200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-11-26 18:35:06 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-11-26 18:35:06 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-11-26 18:35:06 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-11-26 18:35:06 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-11-26 18:35:06 - yfinance - DEBUG - reusing cookie
+2025-11-26 18:35:06 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-11-26 18:35:06 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-11-26 18:35:06 - yfinance - DEBUG - reusing crumb
+2025-11-26 18:35:06 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-11-26 18:35:06 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-11-26 18:35:06 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-11-26 18:35:07 - yfinance - DEBUG - response code=200
+2025-11-26 18:35:07 - yfinance - DEBUG -    Exiting _make_request()
+2025-11-26 18:35:07 - yfinance - DEBUG -   Exiting get()
+2025-11-26 18:35:07 - yfinance - DEBUG - BTC-USD: yfinance received OHLC data: 2014-09-17 00:00:00 -> 2025-11-25 00:00:00
+2025-11-26 18:35:07 - yfinance - DEBUG - BTC-USD: OHLC after cleaning: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:35:07 - yfinance - DEBUG - BTC-USD: OHLC after combining events: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:35:07 - yfinance - DEBUG - BTC-USD: yfinance returning OHLC: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:35:07 - yfinance - DEBUG -  Exiting history()
+2025-11-26 18:35:07 - yfinance - DEBUG - Exiting history()
+2025-11-26 18:35:07 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4088 records from Yahoo Finance
+2025-11-26 18:35:07 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 18:35:10 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4088 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-25 00:00:00+00:00)
+2025-11-26 18:35:14 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from 2010-07-01 via Yahoo Finance...
+2025-11-26 18:35:14 - yfinance - DEBUG - Entering history()
+2025-11-26 18:35:14 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['BTC-USD', 1, 0])
+2025-11-26 18:35:14 - yfinance - DEBUG -  Entering history()
+2025-11-26 18:35:14 - yfinance - DEBUG - BTC-USD: Yahoo GET parameters: {'period1': '2010-07-01 00:00:00+00:00', 'period2': '2025-11-26 00:00:00+00:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-11-26 18:35:14 - yfinance - DEBUG - BTC-USD: yfinance received OHLC data: 2014-09-17 00:00:00 -> 2025-11-25 00:00:00
+2025-11-26 18:35:14 - yfinance - DEBUG - BTC-USD: OHLC after cleaning: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:35:14 - yfinance - DEBUG - BTC-USD: OHLC after combining events: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:35:14 - yfinance - DEBUG - BTC-USD: yfinance returning OHLC: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:35:14 - yfinance - DEBUG -  Exiting history()
+2025-11-26 18:35:14 - yfinance - DEBUG - Exiting history()
+2025-11-26 18:35:14 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4088 records from Yahoo Finance
+2025-11-26 18:35:14 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 18:35:16 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from 2010-07-01 via Yahoo Finance...
+2025-11-26 18:35:16 - yfinance - DEBUG - Entering history()
+2025-11-26 18:35:16 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['BTC-USD', 1, 0])
+2025-11-26 18:35:16 - yfinance - DEBUG -  Entering history()
+2025-11-26 18:35:16 - yfinance - DEBUG - BTC-USD: Yahoo GET parameters: {'period1': '2010-07-01 00:00:00+00:00', 'period2': '2025-11-26 00:00:00+00:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-11-26 18:35:16 - yfinance - DEBUG - BTC-USD: yfinance received OHLC data: 2014-09-17 00:00:00 -> 2025-11-25 00:00:00
+2025-11-26 18:35:16 - yfinance - DEBUG - BTC-USD: OHLC after cleaning: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:35:16 - yfinance - DEBUG - BTC-USD: OHLC after combining events: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:35:16 - yfinance - DEBUG - BTC-USD: yfinance returning OHLC: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:35:16 - yfinance - DEBUG -  Exiting history()
+2025-11-26 18:35:16 - yfinance - DEBUG - Exiting history()
+2025-11-26 18:35:16 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4088 records from Yahoo Finance
+2025-11-26 18:35:16 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 18:35:25 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from 2010-07-01 via Yahoo Finance...
+2025-11-26 18:35:25 - yfinance - DEBUG - Entering history()
+2025-11-26 18:35:25 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['BTC-USD', 1, 0])
+2025-11-26 18:35:25 - yfinance - DEBUG -  Entering history()
+2025-11-26 18:35:25 - yfinance - DEBUG - BTC-USD: Yahoo GET parameters: {'period1': '2010-07-01 00:00:00+00:00', 'period2': '2025-11-26 00:00:00+00:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-11-26 18:35:25 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4088 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-25 00:00:00+00:00)
+2025-11-26 18:35:25 - yfinance - DEBUG - BTC-USD: yfinance received OHLC data: 2014-09-17 00:00:00 -> 2025-11-25 00:00:00
+2025-11-26 18:35:25 - yfinance - DEBUG - BTC-USD: OHLC after cleaning: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:35:25 - yfinance - DEBUG - BTC-USD: OHLC after combining events: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:35:25 - yfinance - DEBUG - BTC-USD: yfinance returning OHLC: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:35:25 - yfinance - DEBUG -  Exiting history()
+2025-11-26 18:35:25 - yfinance - DEBUG - Exiting history()
+2025-11-26 18:35:25 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4088 records from Yahoo Finance
+2025-11-26 18:35:25 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 18:35:26 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from 2010-07-01 via Yahoo Finance...
+2025-11-26 18:35:26 - yfinance - DEBUG - Entering history()
+2025-11-26 18:35:26 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['BTC-USD', 1, 0])
+2025-11-26 18:35:26 - yfinance - DEBUG -  Entering history()
+2025-11-26 18:35:26 - yfinance - DEBUG - BTC-USD: Yahoo GET parameters: {'period1': '2010-07-01 00:00:00+00:00', 'period2': '2025-11-26 00:00:00+00:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-11-26 18:35:26 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4088 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-25 00:00:00+00:00)
+2025-11-26 18:35:26 - yfinance - DEBUG - BTC-USD: yfinance received OHLC data: 2014-09-17 00:00:00 -> 2025-11-25 00:00:00
+2025-11-26 18:35:26 - yfinance - DEBUG - BTC-USD: OHLC after cleaning: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:35:26 - yfinance - DEBUG - BTC-USD: OHLC after combining events: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:35:26 - yfinance - DEBUG - BTC-USD: yfinance returning OHLC: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:35:26 - yfinance - DEBUG -  Exiting history()
+2025-11-26 18:35:26 - yfinance - DEBUG - Exiting history()
+2025-11-26 18:35:26 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4088 records from Yahoo Finance
+2025-11-26 18:35:26 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 18:35:29 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from 2010-07-01 via Yahoo Finance...
+2025-11-26 18:35:29 - yfinance - DEBUG - Entering history()
+2025-11-26 18:35:29 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['BTC-USD', 1, 0])
+2025-11-26 18:35:29 - yfinance - DEBUG -  Entering history()
+2025-11-26 18:35:29 - yfinance - DEBUG - BTC-USD: Yahoo GET parameters: {'period1': '2010-07-01 00:00:00+00:00', 'period2': '2025-11-26 00:00:00+00:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-11-26 18:35:29 - yfinance - DEBUG - BTC-USD: yfinance received OHLC data: 2014-09-17 00:00:00 -> 2025-11-25 00:00:00
+2025-11-26 18:35:29 - yfinance - DEBUG - BTC-USD: OHLC after cleaning: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:35:29 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4088 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-25 00:00:00+00:00)
+2025-11-26 18:35:29 - yfinance - DEBUG - BTC-USD: OHLC after combining events: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:35:29 - yfinance - DEBUG - BTC-USD: yfinance returning OHLC: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:35:29 - yfinance - DEBUG -  Exiting history()
+2025-11-26 18:35:29 - yfinance - DEBUG - Exiting history()
+2025-11-26 18:35:29 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4088 records from Yahoo Finance
+2025-11-26 18:35:29 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 18:41:11 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4088 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-25 00:00:00+00:00)
+2025-11-26 18:41:11 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4088 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-25 00:00:00+00:00)
+2025-11-26 18:41:12 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4088 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-25 00:00:00+00:00)
+2025-11-26 18:41:12 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4088 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-25 00:00:00+00:00)
+2025-11-26 18:41:22 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from 2010-07-01 via Yahoo Finance...
+2025-11-26 18:41:22 - yfinance - DEBUG - Entering history()
+2025-11-26 18:41:22 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_tz_kv" ("key" VARCHAR(255) NOT NULL PRIMARY KEY, "value" VARCHAR(255)) WITHOUT ROWID', [])
+2025-11-26 18:41:22 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['BTC-USD', 1, 0])
+2025-11-26 18:41:22 - yfinance - DEBUG -  Entering history()
+2025-11-26 18:41:22 - yfinance - DEBUG - BTC-USD: Yahoo GET parameters: {'period1': '1926-12-21 18:41:27+00:00', 'period2': '2025-11-26 18:41:22+00:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-11-26 18:41:22 - yfinance - DEBUG -   Entering get()
+2025-11-26 18:41:22 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4088 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-25 00:00:00+00:00)
+2025-11-26 18:41:22 - yfinance - DEBUG -    Entering _make_request()
+2025-11-26 18:41:22 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/BTC-USD
+2025-11-26 18:41:22 - yfinance - DEBUG - params={'period1': -1357881513, 'period2': 1764182482, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-11-26 18:41:22 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-11-26 18:41:22 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-11-26 18:41:22 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-11-26 18:41:22 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-11-26 18:41:22 - yfinance - DEBUG -        Entering _load_cookie_curlCffi()
+2025-11-26 18:41:22 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-11-26 18:41:22 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-11-26 18:41:22 - yfinance - DEBUG -        Exiting _load_cookie_curlCffi()
+2025-11-26 18:41:22 - yfinance - DEBUG - reusing persistent cookie
+2025-11-26 18:41:22 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-11-26 18:41:22 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-11-26 18:41:22 - yfinance - DEBUG -        Entering _get_cookie_basic()
+2025-11-26 18:41:22 - yfinance - DEBUG - reusing cookie
+2025-11-26 18:41:22 - yfinance - DEBUG -        Exiting _get_cookie_basic()
+2025-11-26 18:41:22 - yfinance - DEBUG - crumb = 'vn6cBQ88Q4f'
+2025-11-26 18:41:22 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-11-26 18:41:22 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-11-26 18:41:22 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-11-26 18:41:22 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4088 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-25 00:00:00+00:00)
+2025-11-26 18:41:22 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4088 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-25 00:00:00+00:00)
+2025-11-26 18:41:23 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4088 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-25 00:00:00+00:00)
+2025-11-26 18:41:23 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4088 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-25 00:00:00+00:00)
+2025-11-26 18:41:23 - yfinance - DEBUG - response code=200
+2025-11-26 18:41:23 - yfinance - DEBUG -    Exiting _make_request()
+2025-11-26 18:41:23 - yfinance - DEBUG -   Exiting get()
+2025-11-26 18:41:23 - yfinance - DEBUG - BTC-USD: yfinance received OHLC data: 2014-09-17 00:00:00 -> 2025-11-26 18:39:00
+2025-11-26 18:41:23 - yfinance - DEBUG - BTC-USD: OHLC after cleaning: 2014-09-17 00:00:00+00:00 -> 2025-11-26 18:39:00+00:00
+2025-11-26 18:41:23 - yfinance - DEBUG - BTC-USD: OHLC after combining events: 2014-09-17 00:00:00+00:00 -> 2025-11-26 00:00:00+00:00
+2025-11-26 18:41:23 - yfinance - DEBUG - BTC-USD: yfinance returning OHLC: 2014-09-17 00:00:00+00:00 -> 2025-11-26 00:00:00+00:00
+2025-11-26 18:41:23 - yfinance - DEBUG -  Exiting history()
+2025-11-26 18:41:23 - yfinance - DEBUG - Exiting history()
+2025-11-26 18:41:23 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4089 records from Yahoo Finance
+2025-11-26 18:41:23 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 18:41:25 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4089 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-26 00:00:00+00:00)
+2025-11-26 18:41:25 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4089 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-26 00:00:00+00:00)
+2025-11-26 18:41:26 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4089 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-26 00:00:00+00:00)
+2025-11-26 18:41:26 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4089 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-26 00:00:00+00:00)
+2025-11-26 18:43:32 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4089 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-26 00:00:00+00:00)
+2025-11-26 18:43:32 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4089 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-26 00:00:00+00:00)
+2025-11-26 18:43:33 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4089 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-26 00:00:00+00:00)
+2025-11-26 18:43:33 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4089 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-26 00:00:00+00:00)
+2025-11-26 18:43:44 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4089 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-26 00:00:00+00:00)
+2025-11-26 18:43:52 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4089 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-26 00:00:00+00:00)
+2025-11-26 18:43:52 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4089 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-26 00:00:00+00:00)
+2025-11-26 18:43:54 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4089 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-26 00:00:00+00:00)
+2025-11-26 18:43:54 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4089 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-26 00:00:00+00:00)
+2025-11-26 18:43:58 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4089 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-26 00:00:00+00:00)
+2025-11-26 18:43:58 - data_collectors.price_data_v2 - INFO - 📡 Fetching 7 days from CoinGecko API...
+2025-11-26 18:43:58 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4089 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-26 00:00:00+00:00)
+2025-11-26 18:43:58 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-11-26 18:43:59 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=7&interval=daily HTTP/1.1" 200 None
+2025-11-26 18:43:59 - data_collectors.price_data_v2 - INFO - ✅ Fetched 8 records from CoinGecko (2025-11-20 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:43:59 - data_collectors.price_data_v2 - INFO - 🔄 Merging local history with recent CoinGecko data...
+2025-11-26 18:43:59 - data_collectors.price_data_v2 - ERROR - ❌ Error in get_bitcoin_price_series: Cannot compare tz-naive and tz-aware timestamps
+2025-11-26 18:44:03 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from 2014-09-17 via Yahoo Finance...
+2025-11-26 18:44:03 - yfinance - DEBUG - Entering history()
+2025-11-26 18:44:03 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_tz_kv" ("key" VARCHAR(255) NOT NULL PRIMARY KEY, "value" VARCHAR(255)) WITHOUT ROWID', [])
+2025-11-26 18:44:03 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['BTC-USD', 1, 0])
+2025-11-26 18:44:03 - yfinance - DEBUG -  Entering history()
+2025-11-26 18:44:03 - yfinance - DEBUG - BTC-USD: Yahoo GET parameters: {'period1': '2014-09-17 00:00:00+00:00', 'period2': '2025-11-26 00:00:00+00:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-11-26 18:44:03 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4089 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-26 00:00:00+00:00)
+2025-11-26 18:44:03 - yfinance - DEBUG -   Entering get()
+2025-11-26 18:44:03 - yfinance - DEBUG -    Entering _make_request()
+2025-11-26 18:44:03 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/BTC-USD
+2025-11-26 18:44:03 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1410912000, 'period2': 1764115200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-11-26 18:44:03 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-11-26 18:44:03 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-11-26 18:44:03 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-11-26 18:44:03 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-11-26 18:44:03 - yfinance - DEBUG -        Entering _load_cookie_curlCffi()
+2025-11-26 18:44:03 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-11-26 18:44:03 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-11-26 18:44:03 - yfinance - DEBUG -        Exiting _load_cookie_curlCffi()
+2025-11-26 18:44:03 - yfinance - DEBUG - reusing persistent cookie
+2025-11-26 18:44:03 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-11-26 18:44:03 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-11-26 18:44:03 - yfinance - DEBUG -        Entering _get_cookie_basic()
+2025-11-26 18:44:03 - yfinance - DEBUG - reusing cookie
+2025-11-26 18:44:03 - yfinance - DEBUG -        Exiting _get_cookie_basic()
+2025-11-26 18:44:03 - yfinance - DEBUG - crumb = 'vn6cBQ88Q4f'
+2025-11-26 18:44:03 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-11-26 18:44:03 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-11-26 18:44:03 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-11-26 18:44:04 - yfinance - DEBUG - response code=200
+2025-11-26 18:44:04 - yfinance - DEBUG -    Exiting _make_request()
+2025-11-26 18:44:04 - yfinance - DEBUG -   Exiting get()
+2025-11-26 18:44:04 - yfinance - DEBUG - BTC-USD: yfinance received OHLC data: 2014-09-17 00:00:00 -> 2025-11-25 00:00:00
+2025-11-26 18:44:04 - yfinance - DEBUG - BTC-USD: OHLC after cleaning: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:44:04 - yfinance - DEBUG - BTC-USD: OHLC after combining events: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:44:04 - yfinance - DEBUG - BTC-USD: yfinance returning OHLC: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:44:04 - yfinance - DEBUG -  Exiting history()
+2025-11-26 18:44:04 - yfinance - DEBUG - Exiting history()
+2025-11-26 18:44:04 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4088 records from Yahoo Finance
+2025-11-26 18:44:04 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 18:44:06 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from 2014-09-17 via Yahoo Finance...
+2025-11-26 18:44:06 - yfinance - DEBUG - Entering history()
+2025-11-26 18:44:06 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['BTC-USD', 1, 0])
+2025-11-26 18:44:06 - yfinance - DEBUG -  Entering history()
+2025-11-26 18:44:06 - yfinance - DEBUG - BTC-USD: Yahoo GET parameters: {'period1': '2014-09-17 00:00:00+00:00', 'period2': '2025-11-26 00:00:00+00:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-11-26 18:44:06 - yfinance - DEBUG - BTC-USD: yfinance received OHLC data: 2014-09-17 00:00:00 -> 2025-11-25 00:00:00
+2025-11-26 18:44:06 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4088 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-25 00:00:00+00:00)
+2025-11-26 18:44:06 - yfinance - DEBUG - BTC-USD: OHLC after cleaning: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:44:06 - yfinance - DEBUG - BTC-USD: OHLC after combining events: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:44:06 - yfinance - DEBUG - BTC-USD: yfinance returning OHLC: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:44:06 - yfinance - DEBUG -  Exiting history()
+2025-11-26 18:44:06 - yfinance - DEBUG - Exiting history()
+2025-11-26 18:44:06 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4088 records from Yahoo Finance
+2025-11-26 18:44:06 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 18:44:08 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from 2014-09-17 via Yahoo Finance...
+2025-11-26 18:44:08 - yfinance - DEBUG - Entering history()
+2025-11-26 18:44:08 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['BTC-USD', 1, 0])
+2025-11-26 18:44:08 - yfinance - DEBUG -  Entering history()
+2025-11-26 18:44:08 - yfinance - DEBUG - BTC-USD: Yahoo GET parameters: {'period1': '2014-09-17 00:00:00+00:00', 'period2': '2025-11-26 00:00:00+00:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-11-26 18:44:08 - yfinance - DEBUG - BTC-USD: yfinance received OHLC data: 2014-09-17 00:00:00 -> 2025-11-25 00:00:00
+2025-11-26 18:44:08 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4088 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-25 00:00:00+00:00)
+2025-11-26 18:44:08 - yfinance - DEBUG - BTC-USD: OHLC after cleaning: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:44:08 - yfinance - DEBUG - BTC-USD: OHLC after combining events: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:44:08 - yfinance - DEBUG - BTC-USD: yfinance returning OHLC: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:44:08 - yfinance - DEBUG -  Exiting history()
+2025-11-26 18:44:08 - yfinance - DEBUG - Exiting history()
+2025-11-26 18:44:08 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4088 records from Yahoo Finance
+2025-11-26 18:44:08 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 18:44:10 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from 2014-09-17 via Yahoo Finance...
+2025-11-26 18:44:10 - yfinance - DEBUG - Entering history()
+2025-11-26 18:44:10 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['BTC-USD', 1, 0])
+2025-11-26 18:44:10 - yfinance - DEBUG -  Entering history()
+2025-11-26 18:44:10 - yfinance - DEBUG - BTC-USD: Yahoo GET parameters: {'period1': '2014-09-17 00:00:00+00:00', 'period2': '2025-11-26 00:00:00+00:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-11-26 18:44:10 - yfinance - DEBUG - BTC-USD: yfinance received OHLC data: 2014-09-17 00:00:00 -> 2025-11-25 00:00:00
+2025-11-26 18:44:10 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4088 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-25 00:00:00+00:00)
+2025-11-26 18:44:10 - yfinance - DEBUG - BTC-USD: OHLC after cleaning: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:44:10 - yfinance - DEBUG - BTC-USD: OHLC after combining events: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:44:10 - yfinance - DEBUG - BTC-USD: yfinance returning OHLC: 2014-09-17 00:00:00+00:00 -> 2025-11-25 00:00:00+00:00
+2025-11-26 18:44:10 - yfinance - DEBUG -  Exiting history()
+2025-11-26 18:44:10 - yfinance - DEBUG - Exiting history()
+2025-11-26 18:44:10 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4088 records from Yahoo Finance
+2025-11-26 18:44:10 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 18:47:16 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4088 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-25 00:00:00+00:00)
+2025-11-26 18:47:16 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4088 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-25 00:00:00+00:00)
+2025-11-26 18:47:17 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4088 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-25 00:00:00+00:00)
+2025-11-26 18:47:17 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4088 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-25 00:00:00+00:00)
+2025-11-26 18:47:18 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from CryptoDataDownload (Bitstamp)...
+2025-11-26 18:47:18 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4088 records from local history (2014-09-17 00:00:00+00:00 to 2025-11-25 00:00:00+00:00)
+2025-11-26 18:47:19 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4017 records from CryptoDataDownload
+2025-11-26 18:47:19 - data_collectors.price_data_v2 - INFO - ✅ Cleaned data: 4017 records (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:47:19 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 18:47:21 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from CryptoDataDownload (Bitstamp)...
+2025-11-26 18:47:21 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:47:22 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4017 records from CryptoDataDownload
+2025-11-26 18:47:22 - data_collectors.price_data_v2 - INFO - ✅ Cleaned data: 4017 records (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:47:22 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 18:47:23 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from CryptoDataDownload (Bitstamp)...
+2025-11-26 18:47:23 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:47:24 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4017 records from CryptoDataDownload
+2025-11-26 18:47:24 - data_collectors.price_data_v2 - INFO - ✅ Cleaned data: 4017 records (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:47:25 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 18:47:39 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from CryptoDataDownload (Bitstamp)...
+2025-11-26 18:47:39 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:47:40 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4017 records from CryptoDataDownload
+2025-11-26 18:47:40 - data_collectors.price_data_v2 - INFO - ✅ Cleaned data: 4017 records (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:47:40 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 18:51:10 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:51:10 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:51:11 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:51:11 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:51:12 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from CryptoDataDownload (Bitstamp)...
+2025-11-26 18:51:12 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:51:13 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4017 records from CryptoDataDownload
+2025-11-26 18:51:13 - data_collectors.price_data_v2 - INFO - ✅ Cleaned data: 4017 records (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:51:13 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 18:51:15 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from CryptoDataDownload (Bitstamp)...
+2025-11-26 18:51:15 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:51:16 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4017 records from CryptoDataDownload
+2025-11-26 18:51:16 - data_collectors.price_data_v2 - INFO - ✅ Cleaned data: 4017 records (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:51:16 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 18:51:35 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:51:35 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:51:36 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:51:36 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:24 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:24 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:26 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:26 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:26 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:26 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:27 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:27 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:29 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:29 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:31 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:31 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:32 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:32 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:33 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:33 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:34 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:34 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:36 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:36 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:37 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:37 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:43 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:49 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:52:49 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:53:44 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:53:44 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:53:53 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:53:53 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:53:56 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:53:56 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:53:57 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:53:57 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:54:39 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:54:39 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:54:40 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:54:40 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:54:48 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:54:48 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:55:42 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:55:42 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:55:42 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:55:42 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:56:33 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:56:33 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:56:34 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:56:34 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:56:35 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:56:35 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:56:36 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:56:36 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:56:37 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:56:37 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:56:38 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:56:38 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:56:45 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:56:45 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:56:47 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:56:47 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:56:48 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:56:48 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:56:52 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:56:52 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:59:27 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:59:27 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:59:28 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 18:59:28 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:00:27 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:00:27 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:00:27 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:00:27 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3195
+2025-11-26 19:00:27 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $90,101.04)
+2025-11-26 19:00:27 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:00:28 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:00:28 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:00:28 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:00:29 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3198
+2025-11-26 19:00:29 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $90,109.55)
+2025-11-26 19:00:29 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:01:27 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:01:27 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:01:27 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:01:27 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3195
+2025-11-26 19:01:27 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $90,176.01)
+2025-11-26 19:01:27 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:01:28 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:01:28 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:01:28 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:01:29 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3193
+2025-11-26 19:01:29 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $90,176.00)
+2025-11-26 19:01:29 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:02:27 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:02:28 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:02:28 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3194
+2025-11-26 19:02:28 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $90,164.01)
+2025-11-26 19:02:28 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:03:23 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:03:24 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:03:27 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:03:27 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:03:27 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3199
+2025-11-26 19:03:27 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $90,127.86)
+2025-11-26 19:03:27 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:04:27 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:04:28 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:04:28 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3196
+2025-11-26 19:04:28 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,981.50)
+2025-11-26 19:04:28 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:05 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:05 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:09 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:14 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:14 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:17 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:17 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:05:17 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:17 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:05:18 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3194
+2025-11-26 19:05:18 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,963.79)
+2025-11-26 19:05:18 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:18 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:05:18 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:05:18 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:19 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3194
+2025-11-26 19:05:19 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,963.79)
+2025-11-26 19:05:19 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:27 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:05:27 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:05:27 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:28 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3193
+2025-11-26 19:05:28 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,970.81)
+2025-11-26 19:05:28 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:28 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:05:28 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:05:28 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:29 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3190
+2025-11-26 19:05:29 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,973.56)
+2025-11-26 19:05:29 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:38 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:05:38 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:39 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:05:39 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3192
+2025-11-26 19:05:39 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,953.78)
+2025-11-26 19:05:39 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:39 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:05:39 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:05:39 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:40 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3194
+2025-11-26 19:05:40 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,948.61)
+2025-11-26 19:05:40 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:55 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:55 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:57 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:57 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:58 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:05:58 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:06:00 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:06:00 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:06:02 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:06:02 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:06:04 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:06:04 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:06:23 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:06:23 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:06:23 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:06:24 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3191
+2025-11-26 19:06:24 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,963.99)
+2025-11-26 19:06:24 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:06:24 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:06:24 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:06:24 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:06:25 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3195
+2025-11-26 19:06:25 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,956.22)
+2025-11-26 19:06:25 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:07:23 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:07:23 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:07:24 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:07:24 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3191
+2025-11-26 19:07:24 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,984.36)
+2025-11-26 19:07:24 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:07:24 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:07:24 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:07:25 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3193
+2025-11-26 19:07:25 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,998.17)
+2025-11-26 19:07:25 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:07:25 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:07:25 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:07:25 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:07:26 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3192
+2025-11-26 19:07:26 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,990.09)
+2025-11-26 19:07:26 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:08:24 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:08:24 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:08:24 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:08:25 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3193
+2025-11-26 19:08:25 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,901.17)
+2025-11-26 19:08:25 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:09:24 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:09:24 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:09:25 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:09:25 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3188
+2025-11-26 19:09:25 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,920.61)
+2025-11-26 19:09:25 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:10:22 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:10:22 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:10:22 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:10:22 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3191
+2025-11-26 19:10:22 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $90,047.08)
+2025-11-26 19:10:22 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:10:23 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:10:23 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:10:23 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:10:23 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3190
+2025-11-26 19:10:23 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $90,036.36)
+2025-11-26 19:10:23 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:10:30 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:10:30 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:10:30 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:10:31 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3190
+2025-11-26 19:10:31 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $90,022.65)
+2025-11-26 19:10:31 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:10:31 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:10:31 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:10:31 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:10:32 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3191
+2025-11-26 19:10:32 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $90,009.97)
+2025-11-26 19:10:32 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:10:42 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:10:42 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:10:42 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:10:43 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3191
+2025-11-26 19:10:43 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $90,029.04)
+2025-11-26 19:10:43 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:10:43 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:10:43 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:10:43 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:10:44 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3192
+2025-11-26 19:10:44 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $90,029.03)
+2025-11-26 19:10:44 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:10:52 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:10:52 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:10:52 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:10:52 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3192
+2025-11-26 19:10:52 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $90,034.99)
+2025-11-26 19:10:52 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:10:53 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:10:53 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:10:53 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:10:53 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3189
+2025-11-26 19:10:53 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $90,035.00)
+2025-11-26 19:10:53 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:10:55 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:10:55 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:11:16 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:11:16 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:11:18 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:11:18 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:11:19 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:11:19 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:11:20 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:11:20 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:11:21 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:11:21 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:11:22 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:11:22 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:11:52 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:11:52 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:11:52 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:11:52 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3193
+2025-11-26 19:11:52 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,952.19)
+2025-11-26 19:11:52 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:12:46 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:12:47 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:12:52 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:12:52 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:12:53 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:12:53 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3198
+2025-11-26 19:12:53 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,858.27)
+2025-11-26 19:12:53 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:13:43 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from CryptoDataDownload (Bitstamp)...
+2025-11-26 19:13:43 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:13:44 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4017 records from CryptoDataDownload
+2025-11-26 19:13:44 - data_collectors.price_data_v2 - INFO - ✅ Cleaned data: 4017 records (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:13:44 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 19:13:47 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from CryptoDataDownload (Bitstamp)...
+2025-11-26 19:13:47 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:13:48 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4017 records from CryptoDataDownload
+2025-11-26 19:13:48 - data_collectors.price_data_v2 - INFO - ✅ Cleaned data: 4017 records (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:13:48 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 19:13:52 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:13:52 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:13:52 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:13:53 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3203
+2025-11-26 19:13:53 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,796.48)
+2025-11-26 19:13:53 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from CryptoDataDownload (Bitstamp)...
+2025-11-26 19:13:54 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4017 records from CryptoDataDownload
+2025-11-26 19:13:54 - data_collectors.price_data_v2 - INFO - ✅ Cleaned data: 4017 records (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:13:54 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 19:14:10 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from CryptoDataDownload (Bitstamp)...
+2025-11-26 19:14:11 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4017 records from CryptoDataDownload
+2025-11-26 19:14:11 - data_collectors.price_data_v2 - INFO - ✅ Cleaned data: 4017 records (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:14:11 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 19:14:14 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from CryptoDataDownload (Bitstamp)...
+2025-11-26 19:14:14 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:14:15 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4017 records from CryptoDataDownload
+2025-11-26 19:14:15 - data_collectors.price_data_v2 - INFO - ✅ Cleaned data: 4017 records (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:14:15 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 19:14:22 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from CryptoDataDownload (Bitstamp)...
+2025-11-26 19:14:22 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:14:23 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4017 records from CryptoDataDownload
+2025-11-26 19:14:23 - data_collectors.price_data_v2 - INFO - ✅ Cleaned data: 4017 records (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:14:23 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 19:14:25 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from CryptoDataDownload (Bitstamp)...
+2025-11-26 19:14:25 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:14:26 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4017 records from CryptoDataDownload
+2025-11-26 19:14:26 - data_collectors.price_data_v2 - INFO - ✅ Cleaned data: 4017 records (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:14:26 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 19:14:52 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:14:52 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:14:52 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:14:52 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3201
+2025-11-26 19:14:52 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,793.79)
+2025-11-26 19:14:52 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from CryptoDataDownload (Bitstamp)...
+2025-11-26 19:14:53 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4017 records from CryptoDataDownload
+2025-11-26 19:14:53 - data_collectors.price_data_v2 - INFO - ✅ Cleaned data: 4017 records (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:14:53 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 19:15:52 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:15:52 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:15:53 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:15:53 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3201
+2025-11-26 19:15:53 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,887.31)
+2025-11-26 19:15:53 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from CryptoDataDownload (Bitstamp)...
+2025-11-26 19:15:54 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4017 records from CryptoDataDownload
+2025-11-26 19:15:54 - data_collectors.price_data_v2 - INFO - ✅ Cleaned data: 4017 records (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:15:54 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 19:16:53 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:16:53 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:16:53 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:16:54 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3196
+2025-11-26 19:16:54 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,796.98)
+2025-11-26 19:16:54 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from CryptoDataDownload (Bitstamp)...
+2025-11-26 19:16:55 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4017 records from CryptoDataDownload
+2025-11-26 19:16:55 - data_collectors.price_data_v2 - INFO - ✅ Cleaned data: 4017 records (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:16:55 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 19:17:56 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:17:56 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:17:56 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:17:57 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3188
+2025-11-26 19:17:57 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,894.67)
+2025-11-26 19:17:57 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from CryptoDataDownload (Bitstamp)...
+2025-11-26 19:17:58 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4017 records from CryptoDataDownload
+2025-11-26 19:17:58 - data_collectors.price_data_v2 - INFO - ✅ Cleaned data: 4017 records (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:17:58 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 19:18:15 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from CryptoDataDownload (Bitstamp)...
+2025-11-26 19:18:15 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:18:16 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4017 records from CryptoDataDownload
+2025-11-26 19:18:16 - data_collectors.price_data_v2 - INFO - ✅ Cleaned data: 4017 records (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:18:16 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 19:18:53 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:18:53 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:18:54 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:18:54 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3192
+2025-11-26 19:18:54 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,943.67)
+2025-11-26 19:18:54 - data_collectors.price_data_v2 - INFO - 📡 Downloading full Bitcoin history from CryptoDataDownload (Bitstamp)...
+2025-11-26 19:18:55 - data_collectors.price_data_v2 - INFO - ✅ Downloaded 4017 records from CryptoDataDownload
+2025-11-26 19:18:55 - data_collectors.price_data_v2 - INFO - ✅ Cleaned data: 4017 records (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:18:55 - data_collectors.price_data_v2 - INFO - 💾 Saved full history to /Users/wrok/bitcoin-dashboard /data_collectors/../data/bitcoin_price_history.csv
+2025-11-26 19:19:52 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:19:52 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:19:52 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:19:52 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3190
+2025-11-26 19:19:52 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,997.84)
+2025-11-26 19:19:52 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:19:53 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:19:53 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:19:53 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:19:54 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3189
+2025-11-26 19:19:54 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,997.84)
+2025-11-26 19:19:54 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:20:52 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:20:53 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:20:53 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:20:53 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3191
+2025-11-26 19:20:53 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,984.26)
+2025-11-26 19:20:53 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:21:52 - data_collectors.price_data_v2 - INFO - 📡 Fetching live data from Binance (last 60 minutes)...
+2025-11-26 19:21:52 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)
+2025-11-26 19:21:53 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-11-26 19:21:53 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3194
+2025-11-26 19:21:53 - data_collectors.price_data_v2 - INFO - ✅ Fetched 60 minute candles from Binance (latest: $89,960.38)
+2025-11-26 19:21:53 - data_collectors.price_data_v2 - INFO - ✅ Loaded 4017 records from local history (2014-11-28 00:00:00 to 2025-11-26 00:00:00)

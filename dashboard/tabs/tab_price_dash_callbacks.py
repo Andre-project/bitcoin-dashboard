@@ -4,7 +4,7 @@ from dash.exceptions import PreventUpdate
 import plotly.graph_objects as go
 import pandas as pd
 from datetime import datetime
-from data_collectors.price_data_v2 import get_bitcoin_price_series, download_full_bitcoin_history, load_local_history, fetch_live_binance_data
+from data_collectors.price_data import get_bitcoin_price_series, download_full_bitcoin_history, load_local_history, fetch_live_binance_data
 
 
 def register_callbacks(app):

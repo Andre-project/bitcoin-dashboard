@@ -108,7 +108,7 @@ bitcoin-ecosystem-dashboard/
 │ ├── etf_analytics.py # Flow analysis, correlations
 │ └── convergence.py # Multi-signal scoring system
 │
-├── dashboard/ # Streamlit application
+├── dashboard/ # Dash application
 │ ├── app.py # Main dashboard entry point
 │ ├── tab_network.py # On-chain metrics tab
 │ ├── tab_etf.py # ETF flows tab
@@ -631,5 +631,5 @@ add Glassnode data.
 
 ---
 
-**Last Updated**: November 24, 2024
-**Version**: 0.2.0 (Dash Migration Phase)
+**Last Updated**: December 7, 2025
+**Version**: 0.3.0 (Dash Production)

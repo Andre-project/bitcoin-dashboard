@@ -28,7 +28,7 @@ def register_callbacks(app):
                 
                 return (
                     {'price': latest_price, 'time': latest_time.isoformat()},
-                    f"🔴 LIVE: ${latest_price:,.2f}"
+                    f"LIVE: ${latest_price:,.2f}"
                 )
             else:
                 return None, ""
@@ -69,14 +69,14 @@ def register_callbacks(app):
                 if df is None or df.empty:
                     print("❌ Full history download failed")
                     return ({}, "N/A", "", "N/A", "", "N/A", "", "N/A", "", "No data", 
-                           html.Div("⚠️ Error downloading full history", style={'color': 'red', 'padding': '10px', 'backgroundColor': '#f8d7da'}))
+                           html.Div("Error downloading full history", style={'color': 'red', 'padding': '10px', 'backgroundColor': '#f8d7da'}))
             elif refresh_clicks and refresh_clicks > 0:
                 print("🔄 Refreshing data with live updates...")
                 df = get_bitcoin_price_series(include_live=True)
                 if df is None or df.empty:
                     print("❌ Data refresh failed")
                     return ({}, "N/A", "", "N/A", "", "N/A", "", "N/A", "", "No data", 
-                           html.Div("⚠️ Error loading data", style={'color': 'red', 'padding': '10px', 'backgroundColor': '#f8d7da'}))
+                           html.Div("Error loading data", style={'color': 'red', 'padding': '10px', 'backgroundColor': '#f8d7da'}))
             else:
                 print("📂 Loading from local cache with live update...")
                 df = load_local_history()
@@ -99,7 +99,7 @@ def register_callbacks(app):
                     if df is None or df.empty:
                         print("❌ Failed to load any data")
                         return ({}, "N/A", "", "N/A", "", "N/A", "", "N/A", "", "No data",
-                               html.Div("⚠️ No data available. Click Refresh or Full History.", style={'color': 'red', 'padding': '10px', 'backgroundColor': '#f8d7da'}))
+                               html.Div("No data available. Click Refresh or Full History.", style={'color': 'red', 'padding': '10px', 'backgroundColor': '#f8d7da'}))
             
             print(f"✅ Loaded {len(df)} records")
             
@@ -208,11 +208,21 @@ def register_callbacks(app):
                 xaxis_title="Date",
                 yaxis_title="Price (USD)",
                 template='plotly_white',
-                hovermode='x unified',
+                hovermode='x',  # Show separate hovers per trace
                 height=400,
                 showlegend=True,
                 legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01),
-                margin=dict(l=0, r=0, t=40, b=0)
+                margin=dict(l=0, r=0, t=40, b=40),
+                xaxis=dict(
+                    showspikes=True,
+                    spikemode='toaxis+across',
+                    spikethickness=1,
+                    spikecolor='#333333',
+                    spikedash='solid',
+                    spikesnap='cursor',
+                    showline=True,
+                    showgrid=True
+                )
             )
             
             print("✅ Dashboard updated successfully")
@@ -227,7 +237,7 @@ def register_callbacks(app):
                 f"({actual_days}d)",
                 f"${max_price:,.2f}",
                 f"({actual_days}d)",
-                f"📊 Displaying: {actual_days} days",
+                f"Displaying: {actual_days} days",
                 html.Div()
             )
             
@@ -236,7 +246,7 @@ def register_callbacks(app):
             import traceback
             traceback.print_exc()
             return ({}, "N/A", "", "N/A", "", "N/A", "", "N/A", "", "Error",
-                   html.Div(f"⚠️ Error: {str(e)}", style={'color': 'red', 'padding': '10px', 'backgroundColor': '#f8d7da'}))
+                   html.Div(f"Error: {str(e)}", style={'color': 'red', 'padding': '10px', 'backgroundColor': '#f8d7da'}))
 
     # Callback table
     @app.callback(
@@ -268,9 +278,16 @@ def register_callbacks(app):
             page_size=10
         )
 
-    # Callback statistiques
+    # Callback for Statistics & Risk Metrics section
     @app.callback(
-        [Output('stats-period', 'children'),
+        [Output('period-days-count', 'children'),
+         Output('period-date-range', 'children'),
+         Output('median-price', 'children'),
+         Output('volatility', 'children'),
+         Output('std-dev', 'children'),
+         Output('max-drawdown', 'children'),
+         Output('sharpe-ratio', 'children'),
+         Output('stats-period', 'children'),
          Output('stats-price', 'children'),
          Output('stats-volatility', 'children')],
         [Input('refresh-btn', 'n_clicks'),
@@ -282,41 +299,64 @@ def register_callbacks(app):
     def update_statistics(refresh_clicks, full_history_clicks, days, n_intervals, live_intervals):
         df = load_local_history()
         if df is None or df.empty:
-            return "No data", "No data", "No data"
+            return "--", "-- to --", "--", "--", "--", "--", "--", "", "", ""
         
         df_stats = df.tail(days).copy()
+        actual_days = len(df_stats)
         
-        # Period Info - compact
-        period_info = html.Div([
-            html.P(df_stats['date'].iloc[0].strftime('%Y-%m-%d'), style={'marginBottom': '3px'}),
-            html.P(df_stats['date'].iloc[-1].strftime('%Y-%m-%d'), style={'marginBottom': '3px'}),
-            html.P(f"{len(df_stats)} days", style={'marginBottom': '0px', 'fontWeight': 'bold'})
-        ])
+        # Period Range (homogeneous)
+        start_date = df_stats['date'].iloc[0].strftime('%Y-%m-%d')
+        end_date = df_stats['date'].iloc[-1].strftime('%Y-%m-%d')
+        days_str = f"{actual_days} days"
+        date_range_str = f"{start_date} to {end_date}"
         
-        # Price Statistics - compact
-        std_dev = df_stats['price'].std()
+        # Median Price
         median = df_stats['price'].median()
-        range_price = df_stats['price'].max() - df_stats['price'].min()
+        median_str = f"${median:,.0f}"
         
-        price_info = html.Div([
-            html.P(f"Median: ${median:,.0f}", style={'marginBottom': '3px'}),
-            html.P(f"Std Dev: ${std_dev:,.0f}", style={'marginBottom': '3px'}),
-            html.P(f"Range: ${range_price:,.0f}", style={'marginBottom': '0px'})
-        ])
+        # Standard Deviation
+        std_dev = df_stats['price'].std()
+        std_str = f"${std_dev:,.0f}"
         
-        # Volatility & Risk - compact
+        # Volatility (annualized)
         volatility = (std_dev / df_stats['price'].mean() * 100)
-        daily_returns = df_stats['price'].pct_change().dropna()
-        sharpe_approx = (daily_returns.mean() / daily_returns.std() * (252 ** 0.5)) if daily_returns.std() > 0 else 0
+        vol_str = f"{volatility:.1f}%"
+        
+        # Max Drawdown
         max_drawdown = ((df_stats['price'].cummax() - df_stats['price']) / df_stats['price'].cummax() * 100).max()
+        dd_str = f"{max_drawdown:.1f}%"
         
-        volatility_info = html.Div([
-            html.P(f"Vol: {volatility:.1f}%", style={'marginBottom': '3px'}),
-            html.P(f"Drawdown: {max_drawdown:.1f}%", style={'marginBottom': '3px'}),
-            html.P(f"Sharpe: {sharpe_approx:.2f}", style={'marginBottom': '0px'})
-        ])
+        # Sharpe Ratio
+        daily_returns = df_stats['price'].pct_change().dropna()
+        sharpe = (daily_returns.mean() / daily_returns.std() * (252 ** 0.5)) if daily_returns.std() > 0 else 0
+        sharpe_str = f"{sharpe:.2f}"
         
-        return period_info, price_info, volatility_info
+        return days_str, date_range_str, median_str, vol_str, std_str, dd_str, sharpe_str, "", "", ""
+    
+    # Callback: Toggle Statistics Explanations (6 individual panels)
+    @app.callback(
+        [Output('period-range-explanation', 'style'),
+         Output('median-price-explanation', 'style'),
+         Output('volatility-explanation', 'style'),
+         Output('std-dev-explanation', 'style'),
+         Output('max-drawdown-explanation', 'style'),
+         Output('sharpe-ratio-explanation', 'style'),
+         Output('stats-explanations-panel', 'style')],
+        Input('show-stats-explanations-toggle', 'value')
+    )
+    def toggle_stats_explanations(toggle_value):
+        if toggle_value and 'show' in toggle_value:
+            visible_style = {
+                'display': 'block',
+                'padding': '12px',
+                'backgroundColor': '#f8f9fa',
+                'border': '1px solid #dee2e6',
+                'borderTop': '3px solid #007bff',
+                'marginTop': '10px',
+                'borderRadius': '4px'
+            }
+            return (visible_style,) * 6 + ({'display': 'none'},)
+        return ({'display': 'none'},) * 7
 
     # Callback download
     @app.callback(

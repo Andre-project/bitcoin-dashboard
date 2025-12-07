@@ -31,12 +31,9 @@ app.layout = html.Div([
             html.Div([
                 html.A("Price", id="nav-price", href="#", className="nav-link", **{'data-value': 'price'}),
             ], className="nav-item"),
-            # html.Div([
-            #     html.A("Network", id="nav-network", href="#", className="nav-link", **{'data-value': 'network'}),
-            # ], className="nav-item"),
-            # html.Div([
-            #     html.A("ETF Flows", id="nav-etf", href="#", className="nav-link", **{'data-value': 'etf'}),
-            # ], className="nav-item"),
+            html.Div([
+                html.A("On-Chain Metrics", id="nav-onchain", href="#", className="nav-link", **{'data-value': 'onchain'}),
+            ], className="nav-item"),
         ], id="nav-menu", style={'padding': '10px 0'}),
     ], id="sidebar", className="sidebar"),
     
@@ -78,11 +75,10 @@ def toggle_sidebar(n_clicks, collapsed):
     Output('tab-content', 'children'),
     Output('active-tab', 'data'),
     Input('nav-price', 'n_clicks'),
-    # Input('nav-network', 'n_clicks'),
-    # Input('nav-etf', 'n_clicks'),
+    Input('nav-onchain', 'n_clicks'),
     prevent_initial_call=False
 )
-def render_tab_content(price_clicks):
+def render_tab_content(price_clicks, onchain_clicks):
     """Load the appropriate tab layout based on navigation clicks"""
     ctx = callback_context
     
@@ -96,17 +92,18 @@ def render_tab_content(price_clicks):
     if button_id == 'nav-price':
         from dashboard.tabs.tab_price_dash import layout
         return layout, 'price'
-    # elif button_id == 'nav-network':
-    #     return html.Div("Network tab not implemented yet"), 'network'
-    # elif button_id == 'nav-etf':
-    #     return html.Div("ETF tab not implemented yet"), 'etf'
+    elif button_id == 'nav-onchain':
+        from dashboard.tabs.tab_onchain_dash import layout
+        return layout, 'onchain'
     else:
         from dashboard.tabs.tab_price_dash import layout
         return layout, 'price'
 
 # Enregistrer les callbacks des tabs
-from dashboard.tabs.tab_price_dash_callbacks import register_callbacks
-register_callbacks(app)
+from dashboard.tabs.tab_price_dash_callbacks import register_callbacks as register_price_callbacks
+from dashboard.tabs.tab_onchain_callbacks import register_callbacks as register_onchain_callbacks
+register_price_callbacks(app)
+register_onchain_callbacks(app)
 
 # --- RUN SERVER ---
 if __name__ == '__main__':

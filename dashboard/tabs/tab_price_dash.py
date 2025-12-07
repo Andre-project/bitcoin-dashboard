@@ -1,129 +1,320 @@
-from dash import dcc, html, Input, Output, callback, dash_table
-import plotly.graph_objects as go
-import pandas as pd
-from datetime import datetime
-from data_collectors.price_data import get_bitcoin_price_series, download_full_bitcoin_history, load_local_history
-from dash.exceptions import PreventUpdate
+"""
+Bitcoin Price Dashboard Layout - Academic Style
+
+Features:
+- 4 Key Metrics (compact, grey background)
+- Period selector
+- Statistics & Risk with explanations under each card
+"""
+
+from dash import dcc, html
+
+# --- STYLES ---
+LABEL_STYLE = {
+    'fontSize': '0.65em',
+    'fontWeight': '600',
+    'color': '#6c757d',
+    'textTransform': 'uppercase',
+    'letterSpacing': '0.5px',
+    'marginBottom': '6px',
+    'textAlign': 'center'
+}
+
+SUBTEXT_STYLE = {
+    'fontSize': '0.7em',
+    'color': '#868e96',
+    'textAlign': 'center'
+}
+
+EXPLANATION_HIDDEN = {'display': 'none'}
+
+def create_stat_card_with_explanation(label, value_id, value_default, subtext, explanation_id, expl_title, expl_text, expl_formula, margin_left='0%', value_color='#212529'):
+    """Create a stat card with explanation panel below."""
+    return html.Div([
+        # Card
+        html.Div([
+            html.P(label, style=LABEL_STYLE),
+            html.H3(id=value_id, children=value_default, style={
+                'fontSize': '1.4em', 'fontWeight': 'bold', 'color': value_color,
+                'marginBottom': '5px', 'textAlign': 'center'
+            }),
+            html.P(subtext, style=SUBTEXT_STYLE)
+        ], style={
+            'padding': '15px',
+            'border': '1px solid #dee2e6',
+            'backgroundColor': '#ffffff',
+            'minHeight': '100px'
+        }),
+        
+        # Explanation (hidden by default)
+        html.Div(
+            id=explanation_id,
+            children=[
+                html.H6(expl_title, style={'fontSize': '0.8em', 'fontWeight': 'bold', 'color': '#212529', 'marginBottom': '5px'}),
+                html.P(expl_text, style={'fontSize': '0.75em', 'color': '#6c757d', 'marginBottom': '5px', 'lineHeight': '1.4'}),
+                html.P(expl_formula, style={'fontSize': '0.7em', 'fontFamily': 'monospace', 'color': '#868e96'})
+            ],
+            style=EXPLANATION_HIDDEN
+        )
+    ], style={
+        'width': '32%',
+        'display': 'inline-block',
+        'verticalAlign': 'top',
+        'marginLeft': margin_left
+    })
+
 
 # --- LAYOUT ---
 layout = html.Div([
-    # Header
-    html.H1("₿ Bitcoin Price Dashboard", style={'marginBottom': '20px'}),
+
+    # ===== HEADER =====
+    html.H1("Bitcoin Price Dashboard", style={'marginBottom': '20px', 'fontWeight': '600'}),
     html.Hr(),
     
-    # Error alert
     html.Div(id="error-alert", style={'marginBottom': '15px'}),
     
-    # Initial load trigger
+    # Intervals
     dcc.Interval(id="initial-load", interval=1000, max_intervals=1, n_intervals=0),
-    
-    # Live price update interval (every 60 seconds)
-    dcc.Interval(id="live-update-interval", interval=60*1000, n_intervals=0),
-    
-    # Store for live price data
+    dcc.Interval(id="live-update-interval", interval=60000, n_intervals=0),
     dcc.Store(id="live-price-store"),
     
-    # All metrics in one compact row
+    # ===== KEY METRICS (COMPACT + GREY BACKGROUND) =====
     html.Div([
-        # Row 1: Key Metrics
+        # Current
         html.Div([
-            html.P("Current", style={'fontSize': '0.75em', 'marginBottom': '5px', 'fontWeight': 'bold', 'color': '#6c757d'}),
-            html.H4(id="current-price", style={'fontSize': '1em', 'marginBottom': '3px'}),
-            html.P(id="price-delta", style={'fontSize': '0.7em', 'marginBottom': '0px'})
-        ], style={'width': '12%', 'display': 'inline-block', 'padding': '12px', 'verticalAlign': 'top'}),
-        html.Div([
-            html.P("Average", style={'fontSize': '0.75em', 'marginBottom': '5px', 'fontWeight': 'bold', 'color': '#6c757d'}),
-            html.H4(id="avg-price", style={'fontSize': '1em', 'marginBottom': '3px'}),
-            html.P(id="avg-period", style={'fontSize': '0.7em', 'marginBottom': '0px'})
-        ], style={'width': '12%', 'display': 'inline-block', 'padding': '12px', 'verticalAlign': 'top'}),
-        html.Div([
-            html.P("Lowest", style={'fontSize': '0.75em', 'marginBottom': '5px', 'fontWeight': 'bold', 'color': '#6c757d'}),
-            html.H4(id="min-price", style={'fontSize': '1em', 'marginBottom': '3px'}),
-            html.P(id="min-period", style={'fontSize': '0.7em', 'marginBottom': '0px'})
-        ], style={'width': '12%', 'display': 'inline-block', 'padding': '12px', 'verticalAlign': 'top'}),
-        html.Div([
-            html.P("Highest", style={'fontSize': '0.75em', 'marginBottom': '5px', 'fontWeight': 'bold', 'color': '#6c757d'}),
-            html.H4(id="max-price", style={'fontSize': '1em', 'marginBottom': '3px'}),
-            html.P(id="max-period", style={'fontSize': '0.7em', 'marginBottom': '0px'})
-        ], style={'width': '12%', 'display': 'inline-block', 'padding': '12px', 'verticalAlign': 'top'}),
+            html.P("CURRENT", style=LABEL_STYLE),
+            html.H3(id="current-price", children="--", style={
+                'fontSize': '1.3em', 'fontWeight': 'bold', 'color': '#212529',
+                'marginBottom': '4px', 'textAlign': 'center'
+            }),
+            html.P(id="price-delta", children="-- vs avg", style={
+                'fontSize': '0.7em', 'color': '#6c757d', 'fontWeight': '500', 'textAlign': 'center'
+            })
+        ], style={'width': '23%', 'display': 'inline-block', 'verticalAlign': 'top', 'padding': '12px'}),
         
-        # Row 2: Period
+        # Average
         html.Div([
-            html.P("📅 Period", style={'fontSize': '0.75em', 'marginBottom': '5px', 'fontWeight': 'bold', 'color': '#6c757d'}),
-            html.Div(id="stats-period", style={'fontSize': '0.7em'})
-        ], style={'width': '15%', 'display': 'inline-block', 'padding': '12px', 'verticalAlign': 'top'}),
+            html.P("AVERAGE", style=LABEL_STYLE),
+            html.H4(id="avg-price", children="--", style={
+                'fontSize': '1.2em', 'fontWeight': 'bold', 'color': '#212529',
+                'marginBottom': '4px', 'textAlign': 'center'
+            }),
+            html.P(id="avg-period", children="(365d)", style=SUBTEXT_STYLE)
+        ], style={'width': '23%', 'display': 'inline-block', 'verticalAlign': 'top', 'padding': '12px'}),
         
-        # Row 3: Price Statistics
+        # Lowest
         html.Div([
-            html.P("📊 Statistics", style={'fontSize': '0.75em', 'marginBottom': '5px', 'fontWeight': 'bold', 'color': '#6c757d'}),
-            html.Div(id="stats-price", style={'fontSize': '0.7em'})
-        ], style={'width': '18%', 'display': 'inline-block', 'padding': '12px', 'verticalAlign': 'top'}),
+            html.P("LOWEST", style=LABEL_STYLE),
+            html.H4(id="min-price", children="--", style={
+                'fontSize': '1.2em', 'fontWeight': 'bold', 'color': '#212529',
+                'marginBottom': '4px', 'textAlign': 'center'
+            }),
+            html.P(id="min-period", children="(365d)", style=SUBTEXT_STYLE)
+        ], style={'width': '23%', 'display': 'inline-block', 'verticalAlign': 'top', 'padding': '12px'}),
         
-        # Row 4: Volatility & Risk
+        # Highest
         html.Div([
-            html.P("⚡ Risk", style={'fontSize': '0.75em', 'marginBottom': '5px', 'fontWeight': 'bold', 'color': '#6c757d'}),
-            html.Div(id="stats-volatility", style={'fontSize': '0.7em'})
-        ], style={'width': '18%', 'display': 'inline-block', 'padding': '12px', 'verticalAlign': 'top'}),
-    ], style={'marginBottom': '20px', 'display': 'flex', 'justifyContent': 'space-between', 'border': '1px solid #dee2e6', 'padding': '5px'}),
+            html.P("HIGHEST", style=LABEL_STYLE),
+            html.H4(id="max-price", children="--", style={
+                'fontSize': '1.2em', 'fontWeight': 'bold', 'color': '#212529',
+                'marginBottom': '4px', 'textAlign': 'center'
+            }),
+            html.P(id="max-period", children="(365d)", style=SUBTEXT_STYLE)
+        ], style={'width': '23%', 'display': 'inline-block', 'verticalAlign': 'top', 'padding': '12px'}),
+    ], style={
+        'border': '1px solid #dee2e6',
+        'marginBottom': '25px',
+        'backgroundColor': '#f8f9fa',
+        'display': 'flex',
+        'justifyContent': 'space-around'
+    }),
     
-    # Chart section
-    html.Hr(),
+    # ===== CHART SECTION =====
     html.Div([
-        html.H4("Price Evolution", style={'marginBottom': '15px', 'display': 'inline-block'}),
-        html.Span(id="live-indicator", style={'marginLeft': '15px', 'color': '#28a745', 'fontSize': '0.9em', 'fontWeight': 'bold'}),
-    ], style={'display': 'flex', 'alignItems': 'center'}),
-    dcc.Checklist(
-        id="ma-checkbox",
-        options=[{"label": " Show moving averages (adaptive to timeframe)", "value": "show_ma"}],
-        value=[],
-        inline=True,
-        style={'marginBottom': '15px'}
-    ),
-    dcc.Loading(
-        id="loading-chart",
-        type="default",
-        children=[dcc.Graph(id="price-chart", style={'marginBottom': '20px'})]
-    ),
+        html.Div([
+            html.Span("Price Evolution ", style={'fontSize': '1.2em', 'fontWeight': 'bold', 'color': '#212529'}),
+            html.Span(id="live-indicator", children="", style={'fontSize': '0.95em', 'fontWeight': 'bold', 'color': '#28a745', 'marginLeft': '10px'}),
+            
+            html.Button('Refresh Data', id='refresh-btn', n_clicks=0, style={
+                'marginLeft': 'auto', 'padding': '8px 16px', 'backgroundColor': '#007bff',
+                'color': 'white', 'border': 'none', 'borderRadius': '4px', 'cursor': 'pointer',
+                'fontSize': '0.85em', 'fontWeight': '500'
+            }),
+            html.Button('Full History', id='full-history-btn', n_clicks=0, style={
+                'marginLeft': '10px', 'padding': '8px 16px', 'backgroundColor': '#28a745',
+                'color': 'white', 'border': 'none', 'borderRadius': '4px', 'cursor': 'pointer',
+                'fontSize': '0.85em', 'fontWeight': '500'
+            })
+        ], style={'display': 'flex', 'alignItems': 'center', 'marginBottom': '15px'}),
+        
+        dcc.Checklist(
+            id="ma-checkbox",
+            options=[{"label": " Show moving averages (adaptive to timeframe)", "value": "show_ma"}],
+            value=[],
+            inline=True,
+            style={'marginBottom': '15px', 'fontSize': '0.85em'}
+        ),
+        
+        dcc.Loading(id="loading-chart", type="default", children=[dcc.Graph(id="price-chart")])
+    ], style={'marginBottom': '25px'}),
     
-    # Period slider - right under the graph
+    # ===== PERIOD SELECTOR =====
     html.Div([
-        html.Label("Period (days)", style={'marginBottom': '10px', 'fontSize': '0.875em', 'fontWeight': 'bold', 'display': 'block'}),
+        html.Div([
+            html.Span("Period (days) - Displaying: ", style={'fontSize': '0.9em', 'fontWeight': '500', 'color': '#495057'}),
+            html.Span(id='slider-info', children='365 days', style={'fontSize': '0.9em', 'fontWeight': 'bold', 'color': '#212529'})
+        ], style={'marginBottom': '10px'}),
+        
         dcc.Slider(
-            id="days-slider",
-            min=7,
-            max=4000,
-            value=365,
+            id="days-slider", min=7, max=4000, value=365,
             marks={7: '7d', 30: '1m', 90: '3m', 180: '6m', 365: '1y', 730: '2y', 1095: '3y', 1460: '4y', 2920: '8y', 4000: 'All'},
-            tooltip={"placement": "bottom", "always_visible": True},
-            className="slider"
-        ),
-        html.Div(id="slider-info", style={'color': '#6c757d', 'fontSize': '0.875em', 'marginTop': '10px'}),
-    ], style={'marginBottom': '30px', 'padding': '15px', 'backgroundColor': '#f8f9fa', 'border': '1px solid #dee2e6'}),
+            tooltip={"placement": "bottom", "always_visible": False}
+        )
+    ], style={'marginBottom': '30px', 'padding': '15px', 'backgroundColor': '#f8f9fa', 'border': '1px solid #dee2e6', 'borderRadius': '4px'}),
     
-    # Export section
+    # ===== STATISTICS & RISK METRICS =====
     html.Hr(),
-    html.H5("Export Data", style={'marginBottom': '10px'}),
-    html.P("Download the current dataset as a CSV file or refresh data from the API.", 
-           style={'color': '#6c757d', 'fontSize': '0.875em', 'marginBottom': '15px'}),
     html.Div([
-        html.Button(
-            "Refresh Data",
-            id="refresh-btn",
-            className="button",
-            style={'padding': '10px 20px', 'backgroundColor': '#007bff', 'color': 'white', 'border': 'none', 'cursor': 'pointer', 'fontFamily': 'Courier New, monospace'}
-        ),
-        html.Button(
-            "Full History (2010+)",
-            id="full-history-btn",
-            className="button",
-            style={'padding': '10px 20px', 'backgroundColor': '#28a745', 'color': 'white', 'border': 'none', 'cursor': 'pointer', 'fontFamily': 'Courier New, monospace'}
-        ),
-        html.Button(
-            "Download CSV",
-            id="download-btn",
-            style={'padding': '10px 20px', 'backgroundColor': '#6c757d', 'color': 'white', 'border': 'none', 'cursor': 'pointer', 'fontFamily': 'Courier New, monospace'}
-        ),
-    ], style={'display': 'flex', 'gap': '10px', 'marginBottom': '15px'}),
-    html.Div(id="refresh-status", style={'marginBottom': '10px'}),
+        # Header with toggle
+        html.Div([
+            html.H3("STATISTICS & RISK METRICS", style={
+                'fontSize': '1em', 'fontWeight': 'bold', 'color': '#212529',
+                'display': 'inline-block', 'marginRight': '20px',
+                'textTransform': 'uppercase', 'letterSpacing': '0.5px'
+            }),
+            dcc.Checklist(
+                id='show-stats-explanations-toggle',
+                options=[{'label': ' Show Formulas & Explanations', 'value': 'show'}],
+                value=[],
+                inline=True,
+                style={'fontSize': '0.85em', 'display': 'inline-block'}
+            )
+        ], style={'marginBottom': '20px'}),
+        
+        # ROW 1: Period Range, Median, Volatility (with explanations)
+        html.Div([
+            # Period Range (homogeneous)
+            html.Div([
+                html.Div([
+                    html.P("PERIOD RANGE", style=LABEL_STYLE),
+                    html.H3(id="period-days-count", children="365 days", style={
+                        'fontSize': '1.4em', 'fontWeight': 'bold', 'color': '#212529',
+                        'marginBottom': '5px', 'textAlign': 'center'
+                    }),
+                    html.P(id="period-date-range", children="-- to --", style=SUBTEXT_STYLE)
+                ], style={'padding': '15px', 'border': '1px solid #dee2e6', 'backgroundColor': '#ffffff', 'minHeight': '100px'}),
+                
+                html.Div(id='period-range-explanation', children=[
+                    html.H6("Period Range", style={'fontSize': '0.8em', 'fontWeight': 'bold', 'color': '#212529', 'marginBottom': '5px'}),
+                    html.P("Time window for all displayed metrics.", style={'fontSize': '0.75em', 'color': '#6c757d', 'marginBottom': '5px'}),
+                    html.P("Start = Today - Period | End = Today", style={'fontSize': '0.7em', 'fontFamily': 'monospace', 'color': '#868e96'})
+                ], style=EXPLANATION_HIDDEN)
+            ], style={'width': '32%', 'display': 'inline-block', 'verticalAlign': 'top'}),
+            
+            # Median Price
+            html.Div([
+                html.Div([
+                    html.P("MEDIAN PRICE", style=LABEL_STYLE),
+                    html.H3(id="median-price", children="--", style={
+                        'fontSize': '1.4em', 'fontWeight': 'bold', 'color': '#212529',
+                        'marginBottom': '5px', 'textAlign': 'center'
+                    }),
+                    html.P("(period)", style=SUBTEXT_STYLE)
+                ], style={'padding': '15px', 'border': '1px solid #dee2e6', 'backgroundColor': '#ffffff', 'minHeight': '100px'}),
+                
+                html.Div(id='median-price-explanation', children=[
+                    html.H6("Median Price", style={'fontSize': '0.8em', 'fontWeight': 'bold', 'color': '#212929', 'marginBottom': '5px'}),
+                    html.P("Middle value, less affected by outliers than average.", style={'fontSize': '0.75em', 'color': '#6c757d', 'marginBottom': '5px'}),
+                    html.P("Median = 50th percentile of sorted prices", style={'fontSize': '0.7em', 'fontFamily': 'monospace', 'color': '#868e96'})
+                ], style=EXPLANATION_HIDDEN)
+            ], style={'width': '32%', 'display': 'inline-block', 'verticalAlign': 'top', 'marginLeft': '2%'}),
+            
+            # Volatility
+            html.Div([
+                html.Div([
+                    html.P("VOLATILITY (ANN.)", style=LABEL_STYLE),
+                    html.H3(id="volatility", children="--", style={
+                        'fontSize': '1.4em', 'fontWeight': 'bold', 'color': '#212529',
+                        'marginBottom': '5px', 'textAlign': 'center'
+                    }),
+                    html.P("(annualized)", style=SUBTEXT_STYLE)
+                ], style={'padding': '15px', 'border': '1px solid #dee2e6', 'backgroundColor': '#ffffff', 'minHeight': '100px'}),
+                
+                html.Div(id='volatility-explanation', children=[
+                    html.H6("Volatility (Annualized)", style={'fontSize': '0.8em', 'fontWeight': 'bold', 'color': '#212529', 'marginBottom': '5px'}),
+                    html.P("Price fluctuation intensity, annualized for comparability.", style={'fontSize': '0.75em', 'color': '#6c757d', 'marginBottom': '5px'}),
+                    html.P("Vol = StdDev x sqrt(365 / Period)", style={'fontSize': '0.7em', 'fontFamily': 'monospace', 'color': '#868e96'})
+                ], style=EXPLANATION_HIDDEN)
+            ], style={'width': '32%', 'display': 'inline-block', 'verticalAlign': 'top', 'marginLeft': '2%'})
+        ], style={'marginBottom': '15px'}),
+        
+        # ROW 2: Std Dev, Max Drawdown, Sharpe Ratio (with explanations)
+        html.Div([
+            # Standard Deviation
+            html.Div([
+                html.Div([
+                    html.P("STANDARD DEVIATION", style=LABEL_STYLE),
+                    html.H3(id="std-dev", children="--", style={
+                        'fontSize': '1.4em', 'fontWeight': 'bold', 'color': '#212529',
+                        'marginBottom': '5px', 'textAlign': 'center'
+                    }),
+                    html.P("(period)", style=SUBTEXT_STYLE)
+                ], style={'padding': '15px', 'border': '1px solid #dee2e6', 'backgroundColor': '#ffffff', 'minHeight': '100px'}),
+                
+                html.Div(id='std-dev-explanation', children=[
+                    html.H6("Standard Deviation", style={'fontSize': '0.8em', 'fontWeight': 'bold', 'color': '#212529', 'marginBottom': '5px'}),
+                    html.P("Average distance of prices from the mean.", style={'fontSize': '0.75em', 'color': '#6c757d', 'marginBottom': '5px'}),
+                    html.P("s = sqrt(sum((x - mean)^2) / N)", style={'fontSize': '0.7em', 'fontFamily': 'monospace', 'color': '#868e96'})
+                ], style=EXPLANATION_HIDDEN)
+            ], style={'width': '32%', 'display': 'inline-block', 'verticalAlign': 'top'}),
+            
+            # Max Drawdown
+            html.Div([
+                html.Div([
+                    html.P("MAX DRAWDOWN", style=LABEL_STYLE),
+                    html.H3(id="max-drawdown", children="--", style={
+                        'fontSize': '1.4em', 'fontWeight': 'bold', 'color': '#dc3545',
+                        'marginBottom': '5px', 'textAlign': 'center'
+                    }),
+                    html.P("(from ATH)", style=SUBTEXT_STYLE)
+                ], style={'padding': '15px', 'border': '1px solid #dee2e6', 'backgroundColor': '#ffffff', 'minHeight': '100px'}),
+                
+                html.Div(id='max-drawdown-explanation', children=[
+                    html.H6("Max Drawdown", style={'fontSize': '0.8em', 'fontWeight': 'bold', 'color': '#212529', 'marginBottom': '5px'}),
+                    html.P("Largest peak-to-trough decline, measures downside risk.", style={'fontSize': '0.75em', 'color': '#6c757d', 'marginBottom': '5px'}),
+                    html.P("DD = (Peak - Current) / Peak x 100", style={'fontSize': '0.7em', 'fontFamily': 'monospace', 'color': '#868e96'})
+                ], style=EXPLANATION_HIDDEN)
+            ], style={'width': '32%', 'display': 'inline-block', 'verticalAlign': 'top', 'marginLeft': '2%'}),
+            
+            # Sharpe Ratio
+            html.Div([
+                html.Div([
+                    html.P("SHARPE RATIO", style=LABEL_STYLE),
+                    html.H3(id="sharpe-ratio", children="--", style={
+                        'fontSize': '1.4em', 'fontWeight': 'bold', 'color': '#212529',
+                        'marginBottom': '5px', 'textAlign': 'center'
+                    }),
+                    html.P("(risk-adjusted)", style=SUBTEXT_STYLE)
+                ], style={'padding': '15px', 'border': '1px solid #dee2e6', 'backgroundColor': '#ffffff', 'minHeight': '100px'}),
+                
+                html.Div(id='sharpe-ratio-explanation', children=[
+                    html.H6("Sharpe Ratio", style={'fontSize': '0.8em', 'fontWeight': 'bold', 'color': '#212529', 'marginBottom': '5px'}),
+                    html.P("Risk-adjusted return. Higher is better (>1 is good).", style={'fontSize': '0.75em', 'color': '#6c757d', 'marginBottom': '5px'}),
+                    html.P("Sharpe = (Return - Rf) / Volatility", style={'fontSize': '0.7em', 'fontFamily': 'monospace', 'color': '#868e96'})
+                ], style=EXPLANATION_HIDDEN)
+            ], style={'width': '32%', 'display': 'inline-block', 'verticalAlign': 'top', 'marginLeft': '2%'})
+        ], style={'marginBottom': '20px'}),
+        
+    ], style={'marginBottom': '30px'}),
+    
+    # ===== HIDDEN ELEMENTS =====
+    html.Div(id="refresh-status", style={'display': 'none'}),
+    html.Div(id="data-table-container", style={'display': 'none'}),
     dcc.Download(id="download-dataframe"),
+    html.Button(id="download-btn", style={'display': 'none'}),
+    dcc.Checklist(id="show-data-checkbox", options=[], value=[], style={'display': 'none'}),
+    html.Div(id="stats-period", style={'display': 'none'}),
+    html.Div(id="stats-price", style={'display': 'none'}),
+    html.Div(id="stats-volatility", style={'display': 'none'}),
+    html.Div(id="stats-explanations-panel", style={'display': 'none'}),
 ])

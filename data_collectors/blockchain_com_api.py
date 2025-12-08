@@ -10,6 +10,7 @@ Interface Contract:
 """
 
 import os
+import time
 import pandas as pd
 import requests
 from datetime import datetime, timedelta
@@ -23,6 +24,56 @@ BLOCKCHAIN_BASE_URL = "https://api.blockchain.info/charts"
 CACHE_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "on_chain")
 CACHE_VALIDITY_HOURS = 24
 REQUEST_TIMEOUT = 15
+
+# =============================================================================
+# CIRCULATING SUPPLY
+# =============================================================================
+
+# Cache for circulating supply
+_supply_cache = {'supply': 19_800_000, 'timestamp': 0}
+SUPPLY_CACHE_TTL = 600  # 10 minutes
+
+
+def get_circulating_supply(use_cache: bool = True) -> float:
+    """
+    Get Bitcoin circulating supply from Blockchain.com API.
+    
+    Args:
+        use_cache: If True, return cached value if less than 10 minutes old
+    
+    Returns:
+        float: Number of BTC in circulation (e.g., 19765432.5)
+    """
+    global _supply_cache
+    
+    # Check cache
+    if use_cache and (time.time() - _supply_cache['timestamp']) < SUPPLY_CACHE_TTL:
+        return _supply_cache['supply']
+    
+    try:
+        # Blockchain.com returns total satoshis
+        url = "https://blockchain.info/q/totalbc"
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
+        
+        satoshis = int(response.text)
+        btc = satoshis / 100_000_000  # Convert satoshis to BTC
+        
+        # Update cache
+        _supply_cache = {'supply': btc, 'timestamp': time.time()}
+        logger.info(f"Fetched circulating supply: {btc:,.0f} BTC")
+        
+        return btc
+        
+    except Exception as e:
+        logger.warning(f"Error fetching circulating supply: {e}")
+        return _supply_cache['supply']  # Return cached value on error
+
+
+# =============================================================================
+# CACHING UTILITIES
+# =============================================================================
+
 
 
 def _get_cache_path(metric_name: str) -> str:

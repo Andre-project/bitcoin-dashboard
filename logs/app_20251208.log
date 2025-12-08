@@ -1,0 +1,855 @@
+2025-12-08 02:02:15 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 02:02:15 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 02:02:15 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (final version)
+2025-12-08 02:02:15 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-12-08 02:02:16 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 02:02:16 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 02:02:16 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (final version)
+2025-12-08 02:02:39 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:02:39 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:02:39 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:02:39 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3128
+2025-12-08 02:02:39 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,906.00)
+2025-12-08 02:02:39 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:02:40 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:02:40 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:02:40 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:02:40 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3128
+2025-12-08 02:02:40 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,911.02)
+2025-12-08 02:02:40 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:02:45 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 02:02:45 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 02:02:45 - data_collectors.treasury_entities - INFO - Fetched BTC price: $90,869
+2025-12-08 02:02:45 - data_collectors.treasury_entities - INFO - Loading sample treasury entities data
+2025-12-08 02:02:45 - data_collectors.treasury_entities - INFO - Saved entities data to cache
+2025-12-08 02:02:45 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): blockchain.info:443
+2025-12-08 02:02:45 - urllib3.connectionpool - DEBUG - https://blockchain.info:443 "GET /q/totalbc HTTP/1.1" 200 None
+2025-12-08 02:02:45 - data_collectors.blockchain_com_api - INFO - Fetched circulating supply: 19,959,118 BTC
+2025-12-08 02:02:45 - data_collectors.treasury_data - DEBUG - Cache age: 9:06:53.204449, valid: False
+2025-12-08 02:02:45 - data_collectors.treasury_data - INFO - Downloading treasury data from GitHub...
+2025-12-08 02:02:45 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2025-12-08 02:02:45 - urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "GET /Andre-project/BTC-Treasury/main/category_btc-treasuries.csv HTTP/1.1" 200 1818
+2025-12-08 02:02:45 - data_collectors.treasury_data - INFO - Downloaded 171 records from GitHub
+2025-12-08 02:02:45 - data_collectors.treasury_data - INFO - Cleaned data: 171 records
+2025-12-08 02:02:45 - data_collectors.treasury_data - INFO - Saved 171 records to cache: /Users/wrok/bitcoin-dashboard /data/treasury_cache.csv
+2025-12-08 02:02:46 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 02:02:46 - data_collectors.proof_of_reserve - INFO - Loaded proof of reserve data: 56 entities
+2025-12-08 02:06:18 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 02:06:18 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 02:06:18 - data_collectors.treasury_entities - INFO - Fetched BTC price: $90,943
+2025-12-08 02:06:18 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 02:06:18 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 02:06:18 - dashboard.tabs.tab_onchain_callbacks - INFO - Loading on-chain data from 2024-12-08 to 2025-12-08
+2025-12-08 02:06:18 - data_collectors.blockchain_com_api - INFO - Loaded 362 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/active_addresses_cache.csv
+2025-12-08 02:06:18 - data_collectors.blockchain_com_api - INFO - Loaded 362 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/tx_count_cache.csv
+2025-12-08 02:06:18 - data_collectors.mempool_api - INFO - Loaded 365 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/hash_rate_cache.csv
+2025-12-08 02:06:18 - data_collectors.mempool_api - INFO - Loaded 26 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/difficulty_cache.csv
+2025-12-08 02:06:18 - data_collectors.blockchain_com_api - INFO - Loaded 1495 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/nvt_ratio_cache.csv
+2025-12-08 02:06:19 - data_collectors.blockchain_com_api - INFO - Loaded 365 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/miners_revenue_cache.csv
+2025-12-08 02:06:22 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:06:22 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:06:22 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:06:22 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3141
+2025-12-08 02:06:22 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,849.29)
+2025-12-08 02:06:22 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:06:23 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:06:23 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:06:23 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:06:23 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3141
+2025-12-08 02:06:23 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,849.29)
+2025-12-08 02:06:23 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:06:27 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 02:06:27 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 02:06:27 - data_collectors.treasury_entities - INFO - Fetched BTC price: $90,943
+2025-12-08 02:06:27 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 02:06:27 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 02:09:44 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 02:09:44 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 02:09:44 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (final version)
+2025-12-08 02:09:45 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:09:45 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:09:45 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:09:45 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3125
+2025-12-08 02:09:45 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,890.00)
+2025-12-08 02:09:45 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:09:46 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:09:46 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:09:46 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:09:46 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3128
+2025-12-08 02:09:46 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,888.38)
+2025-12-08 02:09:46 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:09:55 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 02:09:55 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 02:09:55 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (final version)
+2025-12-08 02:09:55 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:09:55 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:09:55 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:09:55 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3127
+2025-12-08 02:09:55 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,880.01)
+2025-12-08 02:09:55 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:09:56 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:09:56 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:09:56 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:09:56 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3125
+2025-12-08 02:09:56 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,880.00)
+2025-12-08 02:09:56 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:10:11 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 02:10:11 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 02:10:11 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (final version)
+2025-12-08 02:10:12 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:10:12 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:10:12 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:10:13 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3124
+2025-12-08 02:10:13 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,881.79)
+2025-12-08 02:10:13 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:10:14 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:10:14 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:10:14 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:10:14 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3127
+2025-12-08 02:10:14 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,881.78)
+2025-12-08 02:10:14 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:10:16 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 02:10:16 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 02:10:16 - data_collectors.treasury_entities - INFO - Fetched BTC price: $90,918
+2025-12-08 02:10:16 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 02:10:17 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): blockchain.info:443
+2025-12-08 02:10:17 - urllib3.connectionpool - DEBUG - https://blockchain.info:443 "GET /q/totalbc HTTP/1.1" 200 None
+2025-12-08 02:10:17 - data_collectors.blockchain_com_api - INFO - Fetched circulating supply: 19,959,118 BTC
+2025-12-08 02:10:17 - data_collectors.treasury_data - DEBUG - Cache age: 0:07:31.237490, valid: True
+2025-12-08 02:10:17 - data_collectors.treasury_data - INFO - Loaded 171 records from cache
+2025-12-08 02:10:17 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 02:10:17 - data_collectors.proof_of_reserve - INFO - Loaded proof of reserve data: 56 entities
+2025-12-08 02:10:31 - dashboard.tabs.tab_onchain_callbacks - INFO - Loading on-chain data from 2024-12-08 to 2025-12-08
+2025-12-08 02:10:31 - data_collectors.blockchain_com_api - INFO - Loaded 362 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/active_addresses_cache.csv
+2025-12-08 02:10:31 - data_collectors.blockchain_com_api - INFO - Loaded 362 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/tx_count_cache.csv
+2025-12-08 02:10:31 - data_collectors.mempool_api - INFO - Loaded 365 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/hash_rate_cache.csv
+2025-12-08 02:10:31 - data_collectors.mempool_api - INFO - Loaded 26 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/difficulty_cache.csv
+2025-12-08 02:10:31 - data_collectors.blockchain_com_api - INFO - Loaded 1495 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/nvt_ratio_cache.csv
+2025-12-08 02:10:31 - data_collectors.blockchain_com_api - INFO - Loaded 365 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/miners_revenue_cache.csv
+2025-12-08 02:10:50 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 02:10:50 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 02:10:50 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (final version)
+2025-12-08 02:10:51 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:10:51 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:10:51 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:10:51 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3130
+2025-12-08 02:10:51 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,936.55)
+2025-12-08 02:10:51 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:10:52 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:10:52 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:10:52 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:10:52 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3130
+2025-12-08 02:10:52 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,936.55)
+2025-12-08 02:10:52 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:10:56 - dashboard.tabs.tab_onchain_callbacks - INFO - Loading on-chain data from 2024-12-08 to 2025-12-08
+2025-12-08 02:10:56 - data_collectors.blockchain_com_api - INFO - Loaded 362 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/active_addresses_cache.csv
+2025-12-08 02:10:56 - data_collectors.blockchain_com_api - INFO - Loaded 362 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/tx_count_cache.csv
+2025-12-08 02:10:56 - data_collectors.mempool_api - INFO - Loaded 365 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/hash_rate_cache.csv
+2025-12-08 02:10:56 - data_collectors.mempool_api - INFO - Loaded 26 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/difficulty_cache.csv
+2025-12-08 02:10:56 - data_collectors.blockchain_com_api - INFO - Loaded 1495 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/nvt_ratio_cache.csv
+2025-12-08 02:10:56 - data_collectors.blockchain_com_api - INFO - Loaded 365 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/miners_revenue_cache.csv
+2025-12-08 02:11:18 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 02:11:18 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 02:11:18 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (final version)
+2025-12-08 02:11:19 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:11:19 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:11:19 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:11:19 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3128
+2025-12-08 02:11:19 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,001.30)
+2025-12-08 02:11:19 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:11:20 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:11:20 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:11:20 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:11:20 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3128
+2025-12-08 02:11:20 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,004.04)
+2025-12-08 02:11:20 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 02:11:20 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 02:11:20 - data_collectors.treasury_entities - INFO - Fetched BTC price: $90,949
+2025-12-08 02:11:20 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 02:11:20 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): blockchain.info:443
+2025-12-08 02:11:20 - urllib3.connectionpool - DEBUG - https://blockchain.info:443 "GET /q/totalbc HTTP/1.1" 200 None
+2025-12-08 02:11:20 - data_collectors.blockchain_com_api - INFO - Fetched circulating supply: 19,959,118 BTC
+2025-12-08 02:11:20 - data_collectors.treasury_data - DEBUG - Cache age: 0:08:34.889134, valid: True
+2025-12-08 02:11:20 - data_collectors.treasury_data - INFO - Loaded 171 records from cache
+2025-12-08 02:11:20 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 02:11:20 - data_collectors.proof_of_reserve - INFO - Loaded proof of reserve data: 56 entities
+2025-12-08 02:11:23 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 02:11:23 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 02:11:23 - data_collectors.treasury_entities - INFO - Fetched BTC price: $90,949
+2025-12-08 02:11:23 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 02:11:23 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 02:11:25 - dashboard.tabs.tab_onchain_callbacks - INFO - Loading on-chain data from 2024-12-08 to 2025-12-08
+2025-12-08 02:11:25 - data_collectors.blockchain_com_api - INFO - Loaded 362 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/active_addresses_cache.csv
+2025-12-08 02:11:25 - data_collectors.blockchain_com_api - INFO - Loaded 362 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/tx_count_cache.csv
+2025-12-08 02:11:25 - data_collectors.mempool_api - INFO - Loaded 365 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/hash_rate_cache.csv
+2025-12-08 02:11:25 - data_collectors.mempool_api - INFO - Loaded 26 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/difficulty_cache.csv
+2025-12-08 02:11:25 - data_collectors.blockchain_com_api - INFO - Loaded 1495 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/nvt_ratio_cache.csv
+2025-12-08 02:11:25 - data_collectors.blockchain_com_api - INFO - Loaded 365 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/miners_revenue_cache.csv
+2025-12-08 02:11:50 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 02:11:50 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 02:11:50 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (final version)
+2025-12-08 02:11:50 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:11:50 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:11:50 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:11:50 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3131
+2025-12-08 02:11:50 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,973.40)
+2025-12-08 02:11:50 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:11:51 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:11:51 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:11:51 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:11:51 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3134
+2025-12-08 02:11:51 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,982.49)
+2025-12-08 02:11:51 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:12:08 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 02:12:08 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 02:12:08 - data_collectors.treasury_entities - INFO - Fetched BTC price: $90,911
+2025-12-08 02:12:08 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 02:12:08 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): blockchain.info:443
+2025-12-08 02:12:08 - urllib3.connectionpool - DEBUG - https://blockchain.info:443 "GET /q/totalbc HTTP/1.1" 200 None
+2025-12-08 02:12:08 - data_collectors.blockchain_com_api - INFO - Fetched circulating supply: 19,959,118 BTC
+2025-12-08 02:12:08 - data_collectors.treasury_data - DEBUG - Cache age: 0:09:22.962959, valid: True
+2025-12-08 02:12:08 - data_collectors.treasury_data - INFO - Loaded 171 records from cache
+2025-12-08 02:12:08 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 02:12:08 - data_collectors.proof_of_reserve - INFO - Loaded proof of reserve data: 56 entities
+2025-12-08 02:12:12 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 02:12:12 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 02:12:12 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (final version)
+2025-12-08 02:12:13 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:12:13 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:12:13 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:12:13 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3130
+2025-12-08 02:12:13 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,957.70)
+2025-12-08 02:12:13 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:12:14 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:12:14 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:12:14 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:12:14 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3133
+2025-12-08 02:12:14 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,957.71)
+2025-12-08 02:12:14 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:12:15 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 02:12:15 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 02:12:15 - data_collectors.treasury_entities - INFO - Fetched BTC price: $90,911
+2025-12-08 02:12:15 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 02:12:15 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): blockchain.info:443
+2025-12-08 02:12:15 - urllib3.connectionpool - DEBUG - https://blockchain.info:443 "GET /q/totalbc HTTP/1.1" 200 None
+2025-12-08 02:12:15 - data_collectors.blockchain_com_api - INFO - Fetched circulating supply: 19,959,118 BTC
+2025-12-08 02:12:15 - data_collectors.treasury_data - DEBUG - Cache age: 0:09:29.785082, valid: True
+2025-12-08 02:12:15 - data_collectors.treasury_data - INFO - Loaded 171 records from cache
+2025-12-08 02:12:15 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 02:12:15 - data_collectors.proof_of_reserve - INFO - Loaded proof of reserve data: 56 entities
+2025-12-08 02:14:43 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 02:14:43 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 02:14:43 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (final version)
+2025-12-08 02:14:43 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:14:43 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:14:43 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:14:44 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3133
+2025-12-08 02:14:44 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,935.85)
+2025-12-08 02:14:44 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:14:45 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:14:45 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:14:45 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:14:45 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3138
+2025-12-08 02:14:45 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,935.85)
+2025-12-08 02:14:45 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:15:09 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 02:15:09 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 02:15:09 - data_collectors.treasury_entities - INFO - Fetched BTC price: $90,964
+2025-12-08 02:15:09 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 02:15:09 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): blockchain.info:443
+2025-12-08 02:15:10 - urllib3.connectionpool - DEBUG - https://blockchain.info:443 "GET /q/totalbc HTTP/1.1" 200 None
+2025-12-08 02:15:10 - data_collectors.blockchain_com_api - INFO - Fetched circulating supply: 19,959,118 BTC
+2025-12-08 02:15:10 - data_collectors.treasury_data - DEBUG - Cache age: 0:12:24.137900, valid: True
+2025-12-08 02:15:10 - data_collectors.treasury_data - INFO - Loaded 171 records from cache
+2025-12-08 02:15:10 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 02:15:10 - data_collectors.proof_of_reserve - INFO - Loaded proof of reserve data: 56 entities
+2025-12-08 02:15:16 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 02:15:16 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 02:15:16 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (final version)
+2025-12-08 02:15:16 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:15:16 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:15:16 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:15:16 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3132
+2025-12-08 02:15:16 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,913.23)
+2025-12-08 02:15:16 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:15:17 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:15:17 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:15:17 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:15:17 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3133
+2025-12-08 02:15:17 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,913.23)
+2025-12-08 02:15:17 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:15:19 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 02:15:19 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 02:15:19 - data_collectors.treasury_entities - INFO - Fetched BTC price: $90,964
+2025-12-08 02:15:19 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 02:15:19 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): blockchain.info:443
+2025-12-08 02:15:19 - urllib3.connectionpool - DEBUG - https://blockchain.info:443 "GET /q/totalbc HTTP/1.1" 200 None
+2025-12-08 02:15:19 - data_collectors.blockchain_com_api - INFO - Fetched circulating supply: 19,959,118 BTC
+2025-12-08 02:15:19 - data_collectors.treasury_data - DEBUG - Cache age: 0:12:33.626136, valid: True
+2025-12-08 02:15:19 - data_collectors.treasury_data - INFO - Loaded 171 records from cache
+2025-12-08 02:15:19 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 02:15:19 - data_collectors.proof_of_reserve - INFO - Loaded proof of reserve data: 56 entities
+2025-12-08 02:15:40 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 02:15:40 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 02:15:40 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (final version)
+2025-12-08 02:15:41 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:15:41 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:15:41 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:15:41 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3135
+2025-12-08 02:15:41 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,958.16)
+2025-12-08 02:15:41 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:15:42 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:15:42 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:15:42 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:15:42 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3135
+2025-12-08 02:15:42 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,958.16)
+2025-12-08 02:15:42 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:16:07 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 02:16:07 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 02:16:07 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (final version)
+2025-12-08 02:16:07 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:16:07 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:16:07 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:16:08 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3122
+2025-12-08 02:16:08 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,973.04)
+2025-12-08 02:16:08 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:16:09 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:16:09 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:16:09 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:16:10 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3124
+2025-12-08 02:16:10 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,963.01)
+2025-12-08 02:16:10 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:16:25 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 02:16:25 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 02:16:25 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (final version)
+2025-12-08 02:16:25 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:16:25 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:16:25 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:16:25 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3128
+2025-12-08 02:16:25 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,976.01)
+2025-12-08 02:16:26 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:16:27 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:16:27 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:16:27 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:16:27 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3132
+2025-12-08 02:16:27 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,983.56)
+2025-12-08 02:16:27 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:16:36 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 02:16:36 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 02:16:36 - data_collectors.treasury_entities - INFO - Fetched BTC price: $90,948
+2025-12-08 02:16:36 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 02:16:36 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): blockchain.info:443
+2025-12-08 02:16:37 - urllib3.connectionpool - DEBUG - https://blockchain.info:443 "GET /q/totalbc HTTP/1.1" 200 None
+2025-12-08 02:16:37 - data_collectors.blockchain_com_api - INFO - Fetched circulating supply: 19,959,118 BTC
+2025-12-08 02:16:37 - data_collectors.treasury_data - DEBUG - Cache age: 0:13:51.148293, valid: True
+2025-12-08 02:16:37 - data_collectors.treasury_data - INFO - Loaded 171 records from cache
+2025-12-08 02:16:37 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 02:16:37 - data_collectors.proof_of_reserve - INFO - Loaded proof of reserve data: 56 entities
+2025-12-08 02:17:09 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 02:17:09 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 02:17:09 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (with evolution chart controls)
+2025-12-08 02:17:10 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:17:10 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:17:10 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:17:11 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3128
+2025-12-08 02:17:11 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,986.35)
+2025-12-08 02:17:11 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:17:12 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:17:12 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:17:12 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:17:12 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3127
+2025-12-08 02:17:12 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $90,986.34)
+2025-12-08 02:17:12 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:17:19 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 02:18:11 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:18:11 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:18:11 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:18:11 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3131
+2025-12-08 02:18:11 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,094.26)
+2025-12-08 02:18:11 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:19:11 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:19:11 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:19:11 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:19:11 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3129
+2025-12-08 02:19:11 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,022.91)
+2025-12-08 02:19:11 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:20:11 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:20:11 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:20:11 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:20:11 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3122
+2025-12-08 02:20:11 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,030.43)
+2025-12-08 02:20:11 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:21:11 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:21:11 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:21:11 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:21:11 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3124
+2025-12-08 02:21:11 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,002.44)
+2025-12-08 02:21:11 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:22:11 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:22:11 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:22:11 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:22:11 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3129
+2025-12-08 02:22:11 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,013.71)
+2025-12-08 02:22:11 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:23:12 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:23:12 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:23:12 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:23:12 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3125
+2025-12-08 02:23:12 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,064.87)
+2025-12-08 02:23:12 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:23:51 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 02:23:51 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 02:23:51 - data_collectors.treasury_entities - INFO - Fetched BTC price: $91,033
+2025-12-08 02:23:51 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 02:23:51 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): blockchain.info:443
+2025-12-08 02:23:51 - urllib3.connectionpool - DEBUG - https://blockchain.info:443 "GET /q/totalbc HTTP/1.1" 200 None
+2025-12-08 02:23:51 - data_collectors.blockchain_com_api - INFO - Fetched circulating supply: 19,959,118 BTC
+2025-12-08 02:23:51 - data_collectors.treasury_data - DEBUG - Cache age: 0:21:05.893389, valid: True
+2025-12-08 02:23:51 - data_collectors.treasury_data - INFO - Loaded 171 records from cache
+2025-12-08 02:23:51 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 02:23:51 - data_collectors.proof_of_reserve - INFO - Loaded proof of reserve data: 56 entities
+2025-12-08 02:24:14 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:24:14 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:24:14 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:24:15 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3127
+2025-12-08 02:24:15 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,021.08)
+2025-12-08 02:24:15 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:24:15 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:24:15 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:24:15 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:24:16 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3127
+2025-12-08 02:24:16 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,021.08)
+2025-12-08 02:24:16 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:24:17 - dashboard.tabs.tab_onchain_callbacks - INFO - Loading on-chain data from 2024-12-08 to 2025-12-08
+2025-12-08 02:24:17 - data_collectors.blockchain_com_api - INFO - Loaded 362 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/active_addresses_cache.csv
+2025-12-08 02:24:17 - data_collectors.blockchain_com_api - INFO - Loaded 362 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/tx_count_cache.csv
+2025-12-08 02:24:17 - data_collectors.mempool_api - INFO - Loaded 365 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/hash_rate_cache.csv
+2025-12-08 02:24:17 - data_collectors.mempool_api - INFO - Loaded 26 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/difficulty_cache.csv
+2025-12-08 02:24:17 - data_collectors.blockchain_com_api - INFO - Loaded 1495 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/nvt_ratio_cache.csv
+2025-12-08 02:24:17 - data_collectors.blockchain_com_api - INFO - Loaded 365 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/miners_revenue_cache.csv
+2025-12-08 02:24:18 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 02:24:18 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 02:24:18 - data_collectors.treasury_entities - INFO - Fetched BTC price: $91,033
+2025-12-08 02:24:18 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 02:24:18 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 02:24:23 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:24:23 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:24:23 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:24:23 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3132
+2025-12-08 02:24:23 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,020.01)
+2025-12-08 02:24:23 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:24:24 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:24:24 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:24:24 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:24:24 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3129
+2025-12-08 02:24:24 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,017.70)
+2025-12-08 02:24:24 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:24:52 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 02:24:52 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 02:24:52 - data_collectors.treasury_entities - INFO - Fetched BTC price: $91,051
+2025-12-08 02:24:52 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 02:24:52 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 02:25:24 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 02:25:24 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 02:25:24 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (with evolution chart controls)
+2025-12-08 02:25:25 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:25:25 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:25:25 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:25:26 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3121
+2025-12-08 02:25:26 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,075.38)
+2025-12-08 02:25:26 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:25:27 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:25:27 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:25:27 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:25:27 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3121
+2025-12-08 02:25:27 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,075.38)
+2025-12-08 02:25:27 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:25:47 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 02:25:47 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 02:25:47 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (with evolution chart controls)
+2025-12-08 02:25:47 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:25:47 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:25:47 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:25:47 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3120
+2025-12-08 02:25:47 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,035.71)
+2025-12-08 02:25:47 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:25:48 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:25:48 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:25:48 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:25:48 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3121
+2025-12-08 02:25:48 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,035.72)
+2025-12-08 02:25:48 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:26:21 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 02:26:21 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 02:26:21 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (with evolution chart controls)
+2025-12-08 02:26:29 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 02:26:47 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:26:47 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:26:47 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:26:47 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3123
+2025-12-08 02:26:47 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,059.16)
+2025-12-08 02:26:47 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:26:48 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:26:48 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:26:48 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:26:48 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3123
+2025-12-08 02:26:48 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,059.16)
+2025-12-08 02:26:49 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:26:50 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:26:50 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:26:50 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:26:50 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3123
+2025-12-08 02:26:50 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,059.15)
+2025-12-08 02:26:50 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:27:49 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:27:49 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:27:49 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:27:49 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3122
+2025-12-08 02:27:49 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,057.15)
+2025-12-08 02:27:49 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:28:49 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:28:49 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:28:49 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:28:49 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3116
+2025-12-08 02:28:49 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,018.20)
+2025-12-08 02:28:49 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:29:49 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:29:49 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:29:49 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:29:49 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3114
+2025-12-08 02:29:49 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,044.06)
+2025-12-08 02:29:49 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:30:49 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:30:49 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:30:49 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:30:49 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3122
+2025-12-08 02:30:49 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,000.01)
+2025-12-08 02:30:49 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:31:49 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:31:49 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:31:49 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:31:49 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3121
+2025-12-08 02:31:49 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,174.42)
+2025-12-08 02:31:49 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:32:50 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 02:32:50 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 02:32:50 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:32:50 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3113
+2025-12-08 02:32:50 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,070.01)
+2025-12-08 02:32:50 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 02:33:44 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 02:33:44 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 02:33:44 - data_collectors.treasury_entities - INFO - Fetched BTC price: $91,098
+2025-12-08 02:33:44 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 02:33:44 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): blockchain.info:443
+2025-12-08 02:33:44 - urllib3.connectionpool - DEBUG - https://blockchain.info:443 "GET /q/totalbc HTTP/1.1" 200 None
+2025-12-08 02:33:44 - data_collectors.blockchain_com_api - INFO - Fetched circulating supply: 19,959,118 BTC
+2025-12-08 02:33:44 - data_collectors.treasury_data - DEBUG - Cache age: 0:30:58.846871, valid: True
+2025-12-08 02:33:44 - data_collectors.treasury_data - INFO - Loaded 171 records from cache
+2025-12-08 02:33:44 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 02:33:44 - data_collectors.proof_of_reserve - INFO - Loaded proof of reserve data: 56 entities
+2025-12-08 03:09:59 - data_collectors.proof_score - INFO - Loaded 57 rows from BITCOIN_MAXI_POR_COMPLETE.csv
+2025-12-08 03:10:41 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 03:10:41 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 03:10:41 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (with evolution chart controls)
+2025-12-08 03:10:41 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:10:41 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:10:41 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:10:42 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3070
+2025-12-08 03:10:42 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,242.11)
+2025-12-08 03:10:42 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:10:43 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:10:43 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:10:43 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:10:43 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3071
+2025-12-08 03:10:43 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,242.12)
+2025-12-08 03:10:43 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:10:48 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 03:10:48 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 03:10:48 - data_collectors.treasury_entities - INFO - Fetched BTC price: $91,258
+2025-12-08 03:10:48 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 03:10:48 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): blockchain.info:443
+2025-12-08 03:10:48 - urllib3.connectionpool - DEBUG - https://blockchain.info:443 "GET /q/totalbc HTTP/1.1" 200 None
+2025-12-08 03:10:48 - data_collectors.blockchain_com_api - INFO - Fetched circulating supply: 19,959,137 BTC
+2025-12-08 03:10:48 - data_collectors.treasury_data - DEBUG - Cache age: 1:08:02.754809, valid: True
+2025-12-08 03:10:48 - data_collectors.treasury_data - INFO - Loaded 171 records from cache
+2025-12-08 03:10:48 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 03:10:48 - data_collectors.proof_score - INFO - Loaded 57 rows from BITCOIN_MAXI_POR_COMPLETE.csv
+2025-12-08 03:11:28 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 03:11:28 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 03:11:28 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (with evolution chart controls)
+2025-12-08 03:11:28 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:11:28 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:11:28 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:11:28 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3067
+2025-12-08 03:11:29 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,214.18)
+2025-12-08 03:11:29 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:11:29 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:11:29 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:11:29 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:11:29 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3068
+2025-12-08 03:11:29 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,214.18)
+2025-12-08 03:11:30 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:11:59 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 03:11:59 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 03:11:59 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (with evolution chart controls)
+2025-12-08 03:12:20 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:12:20 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:12:20 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:12:21 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3067
+2025-12-08 03:12:21 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,124.16)
+2025-12-08 03:12:21 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:12:22 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:12:22 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:12:22 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:12:22 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3066
+2025-12-08 03:12:22 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,124.15)
+2025-12-08 03:12:22 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:12:29 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 03:12:29 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 03:12:29 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (with proof score system)
+2025-12-08 03:12:30 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:12:30 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:12:30 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:12:30 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3070
+2025-12-08 03:12:30 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,131.71)
+2025-12-08 03:12:30 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:12:31 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:12:31 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:12:31 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:12:31 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3072
+2025-12-08 03:12:31 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,136.36)
+2025-12-08 03:12:31 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:12:32 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 03:12:32 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 03:12:32 - data_collectors.treasury_entities - INFO - Fetched BTC price: $91,225
+2025-12-08 03:12:32 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 03:12:32 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): blockchain.info:443
+2025-12-08 03:12:33 - urllib3.connectionpool - DEBUG - https://blockchain.info:443 "GET /q/totalbc HTTP/1.1" 200 None
+2025-12-08 03:12:33 - data_collectors.blockchain_com_api - INFO - Fetched circulating supply: 19,959,137 BTC
+2025-12-08 03:12:33 - data_collectors.treasury_data - DEBUG - Cache age: 1:09:47.124860, valid: True
+2025-12-08 03:12:33 - data_collectors.treasury_data - INFO - Loaded 171 records from cache
+2025-12-08 03:12:33 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 03:12:33 - data_collectors.proof_score - INFO - Loaded 57 rows from BITCOIN_MAXI_POR_COMPLETE.csv
+2025-12-08 03:12:38 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 03:13:57 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 03:13:57 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 03:13:57 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (with proof score system)
+2025-12-08 03:13:58 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:13:58 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:13:58 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:13:58 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3065
+2025-12-08 03:13:58 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,114.84)
+2025-12-08 03:13:58 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:13:59 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:13:59 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:13:59 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:13:59 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3059
+2025-12-08 03:13:59 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,118.51)
+2025-12-08 03:13:59 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:14:00 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 03:14:00 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 03:14:00 - data_collectors.treasury_entities - INFO - Fetched BTC price: $91,172
+2025-12-08 03:14:00 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 03:14:00 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): blockchain.info:443
+2025-12-08 03:14:00 - urllib3.connectionpool - DEBUG - https://blockchain.info:443 "GET /q/totalbc HTTP/1.1" 200 None
+2025-12-08 03:14:00 - data_collectors.blockchain_com_api - INFO - Fetched circulating supply: 19,959,137 BTC
+2025-12-08 03:14:01 - data_collectors.treasury_data - DEBUG - Cache age: 1:11:15.058136, valid: True
+2025-12-08 03:14:01 - data_collectors.treasury_data - INFO - Loaded 171 records from cache
+2025-12-08 03:14:01 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 03:14:01 - data_collectors.proof_score - INFO - Loaded 57 rows from BITCOIN_MAXI_POR_COMPLETE.csv
+2025-12-08 03:14:06 - data_collectors.proof_score - INFO - Loaded 57 rows from BITCOIN_MAXI_POR_COMPLETE.csv
+2025-12-08 03:18:28 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:18:28 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:18:28 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:18:28 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3056
+2025-12-08 03:18:28 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,231.15)
+2025-12-08 03:18:28 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:18:29 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:18:29 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:18:29 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:18:29 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3057
+2025-12-08 03:18:29 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,244.82)
+2025-12-08 03:18:29 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:18:30 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 03:18:30 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 03:18:30 - data_collectors.treasury_entities - INFO - Fetched BTC price: $91,167
+2025-12-08 03:18:30 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 03:18:30 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 03:19:05 - data_collectors.proof_score - INFO - Loaded 57 rows from BITCOIN_MAXI_POR_COMPLETE.csv
+2025-12-08 03:19:05 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 03:19:05 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 03:19:05 - data_collectors.treasury_entities - INFO - Fetched BTC price: $91,209
+2025-12-08 03:19:05 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 03:19:45 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 03:19:45 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 03:19:45 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (with proof score system)
+2025-12-08 03:19:47 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:19:47 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:19:47 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:19:48 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3051
+2025-12-08 03:19:48 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,277.03)
+2025-12-08 03:19:48 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:19:49 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:19:49 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:19:49 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:19:49 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3054
+2025-12-08 03:19:49 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,290.72)
+2025-12-08 03:19:49 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:19:59 - data_collectors.proof_score - INFO - Loaded 57 rows from BITCOIN_MAXI_POR_COMPLETE.csv
+2025-12-08 03:20:24 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 03:20:24 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 03:20:24 - data_collectors.treasury_entities - INFO - Fetched BTC price: $91,231
+2025-12-08 03:20:24 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 03:20:24 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): blockchain.info:443
+2025-12-08 03:20:24 - urllib3.connectionpool - DEBUG - https://blockchain.info:443 "GET /q/totalbc HTTP/1.1" 200 None
+2025-12-08 03:20:24 - data_collectors.blockchain_com_api - INFO - Fetched circulating supply: 19,959,137 BTC
+2025-12-08 03:20:24 - data_collectors.treasury_data - DEBUG - Cache age: 1:17:38.980705, valid: True
+2025-12-08 03:20:24 - data_collectors.treasury_data - INFO - Loaded 171 records from cache
+2025-12-08 03:20:24 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 03:20:24 - data_collectors.proof_score - INFO - Loaded 57 rows from BITCOIN_MAXI_POR_COMPLETE.csv
+2025-12-08 03:25:47 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 03:25:47 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 03:25:47 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (with proof score system)
+2025-12-08 03:25:47 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:25:48 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:25:48 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:25:48 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3054
+2025-12-08 03:25:48 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,338.25)
+2025-12-08 03:25:48 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:25:49 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:25:49 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:25:49 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:25:50 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3055
+2025-12-08 03:25:50 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,338.25)
+2025-12-08 03:25:50 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:25:58 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 03:26:23 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 03:26:23 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 03:26:23 - data_collectors.treasury_entities - INFO - Fetched BTC price: $91,331
+2025-12-08 03:26:23 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 03:26:23 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): blockchain.info:443
+2025-12-08 03:26:23 - urllib3.connectionpool - DEBUG - https://blockchain.info:443 "GET /q/totalbc HTTP/1.1" 200 None
+2025-12-08 03:26:23 - data_collectors.blockchain_com_api - INFO - Fetched circulating supply: 19,959,137 BTC
+2025-12-08 03:26:23 - data_collectors.treasury_data - DEBUG - Cache age: 1:23:37.768799, valid: True
+2025-12-08 03:26:23 - data_collectors.treasury_data - INFO - Loaded 171 records from cache
+2025-12-08 03:26:23 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 03:26:23 - data_collectors.proof_score - INFO - Loaded 57 rows from BITCOIN_MAXI_POR_COMPLETE.csv
+2025-12-08 03:29:37 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 03:29:37 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 03:29:37 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (with proof score system)
+2025-12-08 03:29:38 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:29:38 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:29:38 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:29:38 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3045
+2025-12-08 03:29:38 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,288.61)
+2025-12-08 03:29:38 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:29:39 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:29:39 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:29:39 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:29:39 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3046
+2025-12-08 03:29:39 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,288.60)
+2025-12-08 03:29:39 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:29:49 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 03:29:49 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 03:29:49 - data_collectors.treasury_entities - INFO - Fetched BTC price: $91,335
+2025-12-08 03:29:49 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 03:29:49 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): blockchain.info:443
+2025-12-08 03:29:49 - urllib3.connectionpool - DEBUG - https://blockchain.info:443 "GET /q/totalbc HTTP/1.1" 200 None
+2025-12-08 03:29:49 - data_collectors.blockchain_com_api - INFO - Fetched circulating supply: 19,959,137 BTC
+2025-12-08 03:29:49 - data_collectors.treasury_data - DEBUG - Cache age: 1:27:03.916117, valid: True
+2025-12-08 03:29:49 - data_collectors.treasury_data - INFO - Loaded 171 records from cache
+2025-12-08 03:29:49 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 03:29:49 - data_collectors.proof_score - INFO - Loaded 57 rows from BITCOIN_MAXI_POR_COMPLETE.csv
+2025-12-08 03:31:37 - data_collectors.treasury_data - DEBUG - Data directory ensured: /Users/wrok/bitcoin-dashboard /data
+2025-12-08 03:31:37 - dashboard.tabs.tab_onchain_callbacks - INFO - On-Chain Metrics callbacks registered (Academic Style)
+2025-12-08 03:31:37 - dashboard.tabs.tab_companies_callbacks - INFO - Treasury/Companies callbacks registered (with proof score system)
+2025-12-08 03:31:38 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:31:38 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:31:38 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:31:39 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3047
+2025-12-08 03:31:39 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,240.08)
+2025-12-08 03:31:39 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:31:40 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:31:40 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:31:40 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:31:40 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3044
+2025-12-08 03:31:40 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,240.08)
+2025-12-08 03:31:40 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:32:39 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:32:39 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:32:39 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:32:40 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3048
+2025-12-08 03:32:40 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,261.00)
+2025-12-08 03:32:40 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:33:03 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 03:33:04 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 03:33:04 - data_collectors.treasury_entities - INFO - Fetched BTC price: $91,255
+2025-12-08 03:33:04 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 03:33:04 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): blockchain.info:443
+2025-12-08 03:33:04 - urllib3.connectionpool - DEBUG - https://blockchain.info:443 "GET /q/totalbc HTTP/1.1" 200 None
+2025-12-08 03:33:04 - data_collectors.blockchain_com_api - INFO - Fetched circulating supply: 19,959,137 BTC
+2025-12-08 03:33:04 - data_collectors.treasury_data - DEBUG - Cache age: 1:30:18.358914, valid: True
+2025-12-08 03:33:04 - data_collectors.treasury_data - INFO - Loaded 171 records from cache
+2025-12-08 03:33:04 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 03:33:04 - data_collectors.proof_score - INFO - Loaded 57 rows from BITCOIN_MAXI_POR_COMPLETE.csv
+2025-12-08 03:35:44 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 03:35:44 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 03:35:44 - data_collectors.treasury_entities - INFO - Fetched BTC price: $91,269
+2025-12-08 03:35:45 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 03:35:45 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points
+2025-12-08 03:35:46 - dashboard.tabs.tab_onchain_callbacks - INFO - Loading on-chain data from 2024-12-08 to 2025-12-08
+2025-12-08 03:35:46 - data_collectors.blockchain_com_api - INFO - Fetching n-unique-addresses from Blockchain.com...
+2025-12-08 03:35:46 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.blockchain.info:443
+2025-12-08 03:35:46 - urllib3.connectionpool - DEBUG - https://api.blockchain.info:443 "GET /charts/n-unique-addresses?timespan=1year&format=json HTTP/1.1" 200 None
+2025-12-08 03:35:46 - data_collectors.blockchain_com_api - INFO - Fetched 362 records for n-unique-addresses
+2025-12-08 03:35:46 - data_collectors.blockchain_com_api - INFO - Saved 362 records to cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/active_addresses_cache.csv
+2025-12-08 03:35:46 - data_collectors.blockchain_com_api - INFO - Fetching n-transactions from Blockchain.com...
+2025-12-08 03:35:46 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.blockchain.info:443
+2025-12-08 03:35:46 - urllib3.connectionpool - DEBUG - https://api.blockchain.info:443 "GET /charts/n-transactions?timespan=1year&format=json HTTP/1.1" 200 None
+2025-12-08 03:35:46 - data_collectors.blockchain_com_api - INFO - Fetched 362 records for n-transactions
+2025-12-08 03:35:46 - data_collectors.blockchain_com_api - INFO - Saved 362 records to cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/tx_count_cache.csv
+2025-12-08 03:35:46 - data_collectors.mempool_api - INFO - Fetching hash rate from Mempool.space...
+2025-12-08 03:35:46 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): mempool.space:443
+2025-12-08 03:35:46 - urllib3.connectionpool - DEBUG - https://mempool.space:443 "GET /api/v1/mining/hashrate/1y HTTP/1.1" 200 None
+2025-12-08 03:35:46 - data_collectors.mempool_api - INFO - Fetched 365 hash rate records
+2025-12-08 03:35:46 - data_collectors.mempool_api - INFO - Saved 365 records to cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/hash_rate_cache.csv
+2025-12-08 03:35:46 - data_collectors.mempool_api - INFO - Fetching difficulty from Mempool.space...
+2025-12-08 03:35:46 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): mempool.space:443
+2025-12-08 03:35:47 - urllib3.connectionpool - DEBUG - https://mempool.space:443 "GET /api/v1/mining/difficulty-adjustments/1y HTTP/1.1" 200 None
+2025-12-08 03:35:47 - data_collectors.mempool_api - INFO - Fetched 26 difficulty records
+2025-12-08 03:35:47 - data_collectors.mempool_api - INFO - Saved 26 records to cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/difficulty_cache.csv
+2025-12-08 03:35:47 - data_collectors.blockchain_com_api - INFO - Fetching market-cap from Blockchain.com...
+2025-12-08 03:35:47 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.blockchain.info:443
+2025-12-08 03:35:47 - data_collectors.price_data - INFO - Fetching live data from Binance (last 60 minutes)...
+2025-12-08 03:35:47 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:35:47 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+2025-12-08 03:35:47 - urllib3.connectionpool - DEBUG - https://api.blockchain.info:443 "GET /charts/market-cap?timespan=1year&format=json HTTP/1.1" 200 None
+2025-12-08 03:35:47 - data_collectors.blockchain_com_api - INFO - Fetched 1498 records for market-cap
+2025-12-08 03:35:47 - data_collectors.blockchain_com_api - INFO - Fetching estimated-transaction-volume-usd from Blockchain.com...
+2025-12-08 03:35:47 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.blockchain.info:443
+2025-12-08 03:35:47 - urllib3.connectionpool - DEBUG - https://api.binance.com:443 "GET /api/v3/klines?symbol=BTCUSDT&interval=1m&limit=60 HTTP/1.1" 200 3034
+2025-12-08 03:35:47 - data_collectors.price_data - INFO - Fetched 60 minute candles from Binance (latest: $91,226.41)
+2025-12-08 03:35:47 - data_collectors.price_data - INFO - Loaded 4028 records from local history (2014-11-28 to 2025-12-07)
+2025-12-08 03:35:47 - urllib3.connectionpool - DEBUG - https://api.blockchain.info:443 "GET /charts/estimated-transaction-volume-usd?timespan=1year&format=json HTTP/1.1" 200 None
+2025-12-08 03:35:47 - data_collectors.blockchain_com_api - INFO - Fetched 364 records for estimated-transaction-volume-usd
+2025-12-08 03:35:47 - data_collectors.blockchain_com_api - INFO - Calculated 1494 NVT ratio records
+2025-12-08 03:35:47 - data_collectors.blockchain_com_api - INFO - Saved 1494 records to cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/nvt_ratio_cache.csv
+2025-12-08 03:35:47 - data_collectors.blockchain_com_api - INFO - Fetching miners-revenue from Blockchain.com...
+2025-12-08 03:35:47 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.blockchain.info:443
+2025-12-08 03:35:48 - urllib3.connectionpool - DEBUG - https://api.blockchain.info:443 "GET /charts/miners-revenue?timespan=1year&format=json HTTP/1.1" 200 None
+2025-12-08 03:35:48 - data_collectors.blockchain_com_api - INFO - Fetched 365 records for miners-revenue
+2025-12-08 03:35:48 - dashboard.tabs.tab_onchain_callbacks - INFO - Loading on-chain data from 2024-12-08 to 2025-12-08
+2025-12-08 03:35:48 - data_collectors.blockchain_com_api - INFO - Loaded 362 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/active_addresses_cache.csv
+2025-12-08 03:35:48 - data_collectors.blockchain_com_api - INFO - Saved 365 records to cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/miners_revenue_cache.csv
+2025-12-08 03:35:48 - data_collectors.blockchain_com_api - INFO - Loaded 362 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/tx_count_cache.csv
+2025-12-08 03:35:48 - data_collectors.mempool_api - INFO - Loaded 365 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/hash_rate_cache.csv
+2025-12-08 03:35:48 - data_collectors.mempool_api - INFO - Loaded 26 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/difficulty_cache.csv
+2025-12-08 03:35:48 - data_collectors.blockchain_com_api - INFO - Loaded 1494 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/nvt_ratio_cache.csv
+2025-12-08 03:35:48 - data_collectors.blockchain_com_api - INFO - Loaded 365 records from cache: /Users/wrok/bitcoin-dashboard /data_collectors/../data/on_chain/miners_revenue_cache.csv
+2025-12-08 03:35:48 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coingecko.com:443
+2025-12-08 03:35:48 - urllib3.connectionpool - DEBUG - https://api.coingecko.com:443 "GET /api/v3/simple/price?ids=bitcoin&vs_currencies=usd HTTP/1.1" 200 None
+2025-12-08 03:35:48 - data_collectors.treasury_entities - INFO - Fetched BTC price: $91,269
+2025-12-08 03:35:48 - data_collectors.treasury_entities - INFO - Loaded entities data from cache
+2025-12-08 03:35:48 - dashboard.tabs.tab_companies_callbacks - INFO - Loaded 504 historical data points

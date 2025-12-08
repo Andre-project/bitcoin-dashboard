@@ -34,6 +34,9 @@ app.layout = html.Div([
             html.Div([
                 html.A("On-Chain Metrics", id="nav-onchain", href="#", className="nav-link", **{'data-value': 'onchain'}),
             ], className="nav-item"),
+            html.Div([
+                html.A("Treasuries", id="nav-companies", href="#", className="nav-link", **{'data-value': 'companies'}),
+            ], className="nav-item"),
         ], id="nav-menu", style={'padding': '10px 0'}),
     ], id="sidebar", className="sidebar"),
     
@@ -76,9 +79,10 @@ def toggle_sidebar(n_clicks, collapsed):
     Output('active-tab', 'data'),
     Input('nav-price', 'n_clicks'),
     Input('nav-onchain', 'n_clicks'),
+    Input('nav-companies', 'n_clicks'),
     prevent_initial_call=False
 )
-def render_tab_content(price_clicks, onchain_clicks):
+def render_tab_content(price_clicks, onchain_clicks, companies_clicks):
     """Load the appropriate tab layout based on navigation clicks"""
     ctx = callback_context
     
@@ -95,6 +99,9 @@ def render_tab_content(price_clicks, onchain_clicks):
     elif button_id == 'nav-onchain':
         from dashboard.tabs.tab_onchain_dash import layout
         return layout, 'onchain'
+    elif button_id == 'nav-companies':
+        from dashboard.tabs.tab_companies_dash import layout
+        return layout, 'companies'
     else:
         from dashboard.tabs.tab_price_dash import layout
         return layout, 'price'
@@ -102,8 +109,10 @@ def render_tab_content(price_clicks, onchain_clicks):
 # Enregistrer les callbacks des tabs
 from dashboard.tabs.tab_price_dash_callbacks import register_callbacks as register_price_callbacks
 from dashboard.tabs.tab_onchain_callbacks import register_callbacks as register_onchain_callbacks
+from dashboard.tabs.tab_companies_callbacks import register_callbacks as register_companies_callbacks
 register_price_callbacks(app)
 register_onchain_callbacks(app)
+register_companies_callbacks(app)
 
 # --- RUN SERVER ---
 if __name__ == '__main__':
